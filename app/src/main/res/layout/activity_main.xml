@@ -11,8 +11,8 @@
 
     <RelativeLayout
         android:layout_width="499dp"
-        android:layout_height="162dp"
-        android:layout_marginTop="376dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="250dp"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -20,26 +20,32 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:layout_marginStart="100dp"
-            android:id="@+id/daytoon"
-            android:layout_below="@+id/welcome"
-            android:layout_width="353dp"
-            android:layout_height="wrap_content"
-            android:text="@string/DayTOON"
-            android:textColor="@color/white"
-            android:textSize="65dp"
-            android:gravity="center"
-            android:textStyle="bold" />
-
-        <TextView
             android:id="@+id/welcome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:textSize="36dp"
+            android:textSize="30dp"
             android:text="Welcome to"
-            android:layout_marginStart="70dp">
+            android:layout_marginStart="100dp">
         </TextView>
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_below="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/img">
+        </ImageView>
+        <TextView
+            android:layout_marginStart="160dp"
+            android:id="@+id/daytoon"
+            android:layout_below="@+id/image1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/DayTOON"
+            android:textColor="@color/white"
+            android:textSize="45dp"
+            android:gravity="center"
+            android:textStyle="bold" />
     </RelativeLayout>
 
 
