@@ -2,17 +2,51 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="510dp"
+    android:layout_height="1058dp"
+    android:background="#5BA278"
+    android:backgroundTint="#5BA278"
+    android:layout_gravity="center"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <RelativeLayout
+        android:layout_width="499dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="250dp"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:text="Welcome to"
+            android:layout_marginStart="100dp">
+        </TextView>
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_below="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/img">
+        </ImageView>
+        <TextView
+            android:layout_marginStart="160dp"
+            android:id="@+id/daytoon"
+            android:layout_below="@+id/image1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/DayTOON"
+            android:textColor="@color/white"
+            android:textSize="45dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
