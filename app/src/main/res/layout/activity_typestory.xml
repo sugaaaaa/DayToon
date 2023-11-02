@@ -40,7 +40,8 @@
                 android:layout_width="170dp"
                 android:layout_height="50dp"
                 android:text="@string/Modern"
-                android:textColor="@color/black">
+                android:textColor="@color/black"
+                style="?android:attr/buttonBarButtonStyle">
             </Button>
             <Button
                 android:layout_marginStart="24dp"
@@ -49,7 +50,8 @@
                 android:textColor="@color/black"
                 android:layout_width="170dp"
                 android:layout_marginEnd="24dp"
-                android:layout_height="50dp">
+                android:layout_height="50dp"
+                style="?android:attr/buttonBarButtonStyle">
             </Button>
         </LinearLayout>
         <LinearLayout
@@ -65,7 +67,8 @@
                 android:layout_width="170dp"
                 android:layout_height="50dp"
                 android:text="@string/Horror"
-                android:textColor="@color/black">
+                android:textColor="@color/black"
+                style="?android:attr/buttonBarButtonStyle">
             </Button>
             <Button
                 android:layout_marginStart="24dp"
@@ -74,7 +77,8 @@
                 android:textColor="@color/black"
                 android:layout_width="170dp"
                 android:layout_marginEnd="24dp"
-                android:layout_height="50dp">
+                android:layout_height="50dp"
+                style="?android:attr/buttonBarButtonStyle">
             </Button>
         </LinearLayout>
         <LinearLayout
@@ -84,13 +88,15 @@
             android:layout_below="@+id/colum2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            style="?android:attr/buttonBarButtonStyle">
             <Button
                 android:backgroundTint="@color/gray"
                 android:layout_width="170dp"
                 android:layout_height="50dp"
                 android:text="@string/Thriller"
-                android:textColor="@color/black">
+                android:textColor="@color/black"
+                style="?android:attr/buttonBarButtonStyle">
             </Button>
             <Button
                 android:layout_marginStart="24dp"
@@ -99,7 +105,8 @@
                 android:textColor="@color/black"
                 android:layout_width="170dp"
             android:layout_marginEnd="24dp"
-            android:layout_height="50dp">
+            android:layout_height="50dp"
+                style="?android:attr/buttonBarButtonStyle">
         </Button>
     </LinearLayout>
     <LinearLayout
@@ -115,7 +122,8 @@
             android:layout_width="170dp"
             android:layout_height="50dp"
             android:text="@string/Drama"
-            android:textColor="@color/black">
+            android:textColor="@color/black"
+            style="?android:attr/buttonBarButtonStyle">
         </Button>
         <Button
             android:layout_marginStart="24dp"
@@ -124,7 +132,8 @@
             android:textColor="@color/black"
             android:layout_width="170dp"
             android:layout_marginEnd="24dp"
-            android:layout_height="50dp">
+            android:layout_height="50dp"
+            style="?android:attr/buttonBarButtonStyle">
         </Button>
     </LinearLayout>
     <LinearLayout
@@ -140,7 +149,8 @@
             android:layout_width="170dp"
             android:layout_height="50dp"
             android:text="@string/Comedy"
-            android:textColor="@color/black">
+            android:textColor="@color/black"
+            style="?android:attr/buttonBarButtonStyle">
         </Button>
         <Button
             android:layout_marginStart="24dp"
@@ -149,7 +159,8 @@
             android:textColor="@color/black"
             android:layout_width="170dp"
             android:layout_marginEnd="24dp"
-            android:layout_height="50dp">
+            android:layout_height="50dp"
+            style="?android:attr/buttonBarButtonStyle">
         </Button>
     </LinearLayout>
 
