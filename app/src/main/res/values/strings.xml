@@ -8,11 +8,23 @@
     <string name="Romance">Romance</string>
     <string name="Fantasy">Fantasy</string>
     <string name="Action">Action</string>
+    <string name="SliceOfLife">SliceOfLife</string>
     <string name="Drama">Drama</string>
     <string name="Comedy">Comedy</string>
     <string name="SuperHero">SuperHero</string>
-    <string name="UserAgreement">User Agreement</string>
-    <string name="PrivacyAgreement">Privacy Agreement</string>
+    <string name="UserAgreement">User Agreement Privacy Agreement</string>
     <string name="singUp_orLogin">Sing up or Log in</string>
     <string name="ToenjoyFreeComics">to enjoy Free Comics</string>
+    <string name="welcome">Welcome To</string>
+    <string name="Next">Next</string>
+    <string name="Sing_up">Sing up or Login</string>
+    <string name="enjoy">to enjoy free comics </string>
+    <string name="Password">Password</string>
+    <string name="Email">Email</string>
+    <string name="Login">Login</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="Orloginwith"> or login with</string>
+    <string name="HaveProblem">Have problem with logging in?</string>
+    <string name="createacc">Create Account</string>
+    <string name="Name">Name</string>
 </resources>
