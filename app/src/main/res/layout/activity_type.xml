@@ -43,7 +43,8 @@
                 android:layout_height="50dp"
                 android:backgroundTint="@color/gray"
                 android:text="@string/Modern"
-                android:textColor="@color/black">
+                android:textColor="@color/black"
+                tools:ignore="ButtonStyle">
 
             </Button>
 
@@ -53,7 +54,8 @@
                 android:layout_marginStart="24dp"
                 android:backgroundTint="@color/gray"
                 android:text="@string/Fantasy"
-                android:textColor="@color/black">
+                android:textColor="@color/black"
+                tools:ignore="ButtonStyle">
 
             </Button>
         </LinearLayout>

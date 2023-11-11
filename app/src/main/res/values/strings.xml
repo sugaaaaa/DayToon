@@ -27,4 +27,6 @@
     <string name="HaveProblem">Have problem with logging in?</string>
     <string name="createacc">Create Account</string>
     <string name="Name">Name</string>
+    <string name="ToWelcome">Welcome to DayToon</string>
+    <string name="Find">Find your fav Manga</string>
 </resources>

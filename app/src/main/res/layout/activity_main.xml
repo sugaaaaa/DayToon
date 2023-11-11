@@ -7,7 +7,7 @@
     android:background="#5BA278"
     android:backgroundTint="#5BA278"
     android:layout_gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".page.MainActivity">
 
     <RelativeLayout
         android:layout_width="499dp"
@@ -24,10 +24,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:textSize="30dp"
-            android:text="Welcome to"
+            android:textSize="30sp"
+            android:text="@string/welcome"
             android:layout_marginStart="100dp">
         </TextView>
+
         <ImageView
             android:id="@+id/image1"
             android:layout_below="@+id/welcome"
