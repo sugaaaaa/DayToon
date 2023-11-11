@@ -10,9 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
+        android:outlineAmbientShadowColor="@color/Pink"
+        android:outlineSpotShadowColor="@color/Pink"
         android:id="@+id/bottomNavigationView"
         app:menu="@menu/menu"
         android:layout_height="wrap_content"/>

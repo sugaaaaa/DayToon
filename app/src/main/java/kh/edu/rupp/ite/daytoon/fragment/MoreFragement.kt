@@ -1,15 +1,26 @@
 package kh.edu.rupp.ite.daytoon.fragment
 
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kh.edu.rupp.ite.daytoon.databinding.FragmentLibraryBinding
 import kh.edu.rupp.ite.daytoon.databinding.FragmentMoreBinding
 
 class MoreFragement : Fragment() {
-    private lateinit var binding: FragmentMoreBinding
+    private var binding: FragmentMoreBinding? =null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = FragmentMoreBinding.inflate(layoutInflater)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = FragmentMoreBinding.inflate(inflater, container, false)
+        return binding?.root
+    }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        binding = null
     }
 }

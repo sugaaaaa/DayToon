@@ -19,11 +19,8 @@ class ComicsFragment :  Fragment(){
         _binding = FragmentComicsBinding.inflate(inflater, container, false)
         return binding.root
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
         // Your code for fragment initialization and UI interactions goes here
     }
     override fun onDestroyView() {

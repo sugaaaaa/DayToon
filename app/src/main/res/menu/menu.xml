@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-
     <item
         android:id="@+id/mnucomic"
         android:icon="@drawable/ic_action_name"
@@ -11,7 +10,6 @@
         android:id="@+id/mnustory"
         android:icon="@drawable/ic_action_story"
         android:title="STORY" />
-
     <item
         android:id="@+id/mnulibrary"
         android:icon="@drawable/ic_action_library"
