@@ -11,7 +11,6 @@ import kh.edu.rupp.ite.daytoon.databinding.FragmentStoryBinding
 class LibraryFragment : Fragment() {
 
     private var binding: FragmentLibraryBinding? = null
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

@@ -39,6 +39,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btnmodern"
                 android:layout_width="170dp"
                 android:layout_height="50dp"
                 android:backgroundTint="@color/gray"
@@ -49,6 +50,7 @@
             </Button>
 
             <Button
+                android:id="@+id/btnfantasy"
                 android:layout_width="170dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="24dp"
@@ -70,6 +72,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btnhorror"
                 android:layout_width="170dp"
                 android:layout_height="50dp"
                 android:backgroundTint="@color/gray"
@@ -79,6 +82,7 @@
             </Button>
 
             <Button
+                android:id="@+id/btnromance"
                 android:layout_width="170dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="24dp"
@@ -99,6 +103,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btnthriller"
                 android:layout_width="170dp"
                 android:layout_height="50dp"
                 android:backgroundTint="@color/gray"
@@ -108,6 +113,7 @@
             </Button>
 
             <Button
+                android:id="@+id/btnaction"
                 android:layout_width="170dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="24dp"
@@ -128,6 +134,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btndrama"
                 android:layout_width="170dp"
                 android:layout_height="50dp"
                 android:backgroundTint="@color/gray"
@@ -136,6 +143,7 @@
             </Button>
 
             <Button
+                android:id="@+id/btnsliceoflife"
                 android:layout_width="170dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="24dp"
@@ -156,6 +164,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btncomedy"
                 android:layout_width="170dp"
                 android:layout_height="50dp"
                 android:backgroundTint="@color/gray"
@@ -165,6 +174,7 @@
             </Button>
 
             <Button
+                android:id="@+id/btnsuperhero"
                 android:layout_width="170dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="24dp"
@@ -182,6 +192,7 @@
             android:layout_below="@+id/colum5"
             android:gravity="center">
             <Button
+                android:id="@+id/btnNext"
                 android:layout_width="280dp"
                 android:layout_height="50dp"
                 android:backgroundTint="@color/gray"

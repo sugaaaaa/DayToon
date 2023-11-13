@@ -10,7 +10,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="70dp"
         android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -20,21 +20,21 @@
         <LinearLayout
             android:id="@+id/lin1"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="150dp"
             android:orientation="horizontal">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:layout_marginStart="60dp"
+                android:layout_marginStart="40dp"
                 tools:ignore="UselessParent">
 
                 <TextView
                     android:id="@+id/text1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="28dp"
+                    android:layout_marginTop="60dp"
                     android:text="@string/Sing_up"
                     android:textColor="@color/white"
                     android:textSize="18sp"
@@ -55,10 +55,10 @@
                 </TextView>
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
                     android:layout_marginStart="170dp"
-                    android:src="@drawable/img_1">
+                    android:src="@drawable/img_7">
 
                 </ImageView>
             </RelativeLayout>
@@ -96,29 +96,44 @@
             android:inputType="textPassword"
             android:padding="10dp">
         </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="300dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:text="@string/fgpassword">
+
+        </TextView>
+
         <Button
+            android:id="@+id/btnlogin"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_marginStart="200dp"
-            android:layout_marginTop="260dp"
-            android:textColorHint="@color/white"
+            android:layout_marginTop="340dp"
             android:backgroundTint="@color/Green"
             android:text="@string/Login"
-            android:textColor="@color/white">
+            android:textColor="@color/white"
+            android:textColorHint="@color/white">
+
         </Button>
+
         <Button
-            android:id="@+id/sinup"
+            android:id="@+id/btnsinup"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_marginStart="45dp"
-            android:layout_marginTop="260dp"
+            android:layout_marginTop="340dp"
             android:backgroundTint="@color/dark"
             android:text="@string/SignUp"
             android:textColor="@color/white">
         </Button>
         <TextView
             android:id="@+id/text3"
-            android:layout_marginTop="330dp"
+            android:layout_marginTop="400dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Orloginwith"
@@ -159,7 +174,7 @@
 
         <TextView
             android:id="@+id/text4"
-            android:layout_marginTop="460dp"
+            android:layout_marginTop="510dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/HaveProblem"
@@ -170,7 +185,7 @@
         </TextView>
         <TextView
             android:id="@+id/text5"
-            android:layout_marginTop="480dp"
+            android:layout_marginTop="530dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/UserAgreement"

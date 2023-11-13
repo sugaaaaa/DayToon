@@ -29,4 +29,7 @@
     <string name="Name">Name</string>
     <string name="ToWelcome">Welcome to DayToon</string>
     <string name="Find">Find your fav Manga</string>
+    <string name="welcometext">Welcome</string>
+    <string name="fgpassword">Forget Password?</string>
+
 </resources>

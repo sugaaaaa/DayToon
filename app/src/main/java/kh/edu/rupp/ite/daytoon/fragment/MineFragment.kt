@@ -9,7 +9,6 @@ import kh.edu.rupp.ite.daytoon.databinding.FragmentMineeBinding
 
 class MineFragment : Fragment() {
     private var binding: FragmentMineeBinding? =null
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

@@ -10,7 +10,6 @@ import kh.edu.rupp.ite.daytoon.databinding.FragmentMoreBinding
 
 class MoreFragement : Fragment() {
     private var binding: FragmentMoreBinding? =null
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
