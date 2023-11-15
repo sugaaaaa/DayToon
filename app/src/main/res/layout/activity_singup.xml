@@ -22,7 +22,6 @@
             android:orientation="horizontal">
 
         </LinearLayout>
-
         <EditText
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="320dp"
@@ -83,9 +82,7 @@
             android:layout_marginTop="340dp"
             android:backgroundTint="@color/Green"
             android:text="@string/SignUp"
-            android:textColor="@color/white">
-
-        </Button>
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/text3"
@@ -174,6 +171,31 @@
 
             </ImageView>
         </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/acc"
+            android:layout_below="@id/lin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/already"
+                android:textColor="@color/white"
+                android:textSize="16sp">
+            </TextView>
+            <TextView
+                android:id="@+id/logintxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Login"
+                android:textColor="@color/white"
+                android:textSize="16sp">
+            </TextView>
+
+        </LinearLayout>
 
     </RelativeLayout>
 

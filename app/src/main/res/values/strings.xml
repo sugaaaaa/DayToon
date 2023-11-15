@@ -31,5 +31,6 @@
     <string name="Find">Find your fav Manga</string>
     <string name="welcometext">Welcome</string>
     <string name="fgpassword">Forget Password?</string>
-
+    <string name="already">Already have account?</string>
+    <string name="image">Image</string>
 </resources>

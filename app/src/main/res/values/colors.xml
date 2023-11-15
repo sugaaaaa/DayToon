@@ -8,4 +8,6 @@
     <color name="Gray">#808080</color>
     <color name="Green">#4cd038</color>
     <color name="Pink">#FFC0CB</color>
+    <color name="bg_color">#f2f3f5</color>
+    <color name="dark_blue">#014164</color>
 </resources>
