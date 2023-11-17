@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@color/app_background">
+    android:orientation="vertical"
+    android:background="@color/app_background"
+    >
 
     <RelativeLayout
         android:layout_marginTop="100dp"
@@ -20,83 +22,100 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:orientation="horizontal">
-
         </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/namebtn"
+            android:layout_marginTop="@dimen/m10"
+            android:layout_marginEnd="@dimen/m30"
+            android:layout_marginStart="@dimen/m30"
+            android:layout_below="@id/lin1">
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="320dp"
-            android:layout_height="50dp"
+            android:id="@+id/nameET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_below="@id/lin1"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="26dp"
-            android:layout_marginBottom="16dp"
             android:background="@color/gray"
             android:backgroundTint="@color/gray"
             android:ems="10"
             android:hint="@string/Name"
             android:inputType="textEmailAddress"
-            android:padding="10dp"
+            android:padding="15dp"
             tools:ignore="Autofill,LabelFor">
-
         </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailTv"
+            android:layout_marginTop="@dimen/m10"
+            android:layout_marginEnd="@dimen/m30"
+            android:layout_marginStart="@dimen/m30"
+            android:layout_below="@id/namebtn">
         <EditText
-            android:id="@+id/edittext"
-            android:layout_width="320dp"
-            android:layout_height="50dp"
-            android:layout_below="@id/editTextTextEmailAddress"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="10dp"
+            android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/emailET"
             android:background="@color/gray"
             android:backgroundTint="@color/gray"
-            android:ems="10"
             android:hint="@string/Email"
             android:inputType="textEmailAddress"
-            android:padding="10dp"
+            android:padding="15dp"
             tools:ignore="Autofill,LabelFor">
-
         </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <EditText
-            android:id="@+id/editTextTextPassword"
-            android:layout_width="320dp"
-            android:layout_height="50dp"
-            android:layout_below="@id/edittext"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="100dp"
-            android:background="@color/gray"
-            android:backgroundTint="@color/gray"
-            android:ems="10"
-            android:hint="@string/Password"
-            android:inputType="textPassword"
-            android:padding="10dp">
-
-        </EditText>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordTv"
+            android:layout_marginTop="@dimen/m10"
+            android:layout_marginEnd="@dimen/m30"
+            android:layout_marginStart="@dimen/m30"
+            android:layout_below="@id/emailTv"
+            app:passwordToggleEnabled="true">
+            <EditText
+                android:id="@+id/passwordET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/emailET"
+                android:background="@color/gray"
+                android:backgroundTint="@color/gray"
+                android:ems="10"
+                android:hint="@string/Password"
+                android:inputType="textPassword"
+                android:padding="15dp">
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/btnsinup"
-            android:layout_width="180dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="110dp"
-            android:layout_marginTop="340dp"
-            android:backgroundTint="@color/Green"
+            android:id="@+id/singup"
+            android:layout_below="@+id/passwordTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/SignUp"
-            android:textColor="@color/white" />
-
+            android:layout_marginStart="@dimen/m30"
+            android:layout_marginEnd="@dimen/m30"
+            android:layout_marginTop="@dimen/m10"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/Green">
+        </Button>
         <TextView
             android:id="@+id/text3"
+            android:layout_below="@id/singup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="155dp"
-            android:layout_marginTop="420dp"
             android:gravity="center"
+            android:layout_marginTop="@dimen/m10"
             android:text="@string/Orloginwith"
             android:textColor="@color/white"
             android:textSize="16dp">
-
         </TextView>
-
         <LinearLayout
             android:id="@+id/lin2"
             android:layout_width="wrap_content"
@@ -122,7 +141,6 @@
                 android:src="@drawable/img_3">
 
             </ImageView>
-
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="40dp"
@@ -160,43 +178,25 @@
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textStyle="bold">
-
             </TextView>
-
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="170dp"
                 android:src="@drawable/img_6">
-
             </ImageView>
         </RelativeLayout>
-
-        <LinearLayout
-            android:layout_marginTop="10dp"
-            android:id="@+id/acc"
-            android:layout_below="@id/lin2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_below="@+id/lin2"
+                android:layout_marginTop="@dimen/m10"
+                android:gravity="center"
+                android:id="@+id/textlogin"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/already"
                 android:textColor="@color/white"
                 android:textSize="16sp">
             </TextView>
-            <TextView
-                android:id="@+id/logintxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Login"
-                android:textColor="@color/white"
-                android:textSize="16sp">
-            </TextView>
-
-        </LinearLayout>
-
     </RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
