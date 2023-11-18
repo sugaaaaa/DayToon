@@ -36,10 +36,7 @@
           android:textStyle="bold">
 
       </TextView>
-
-
    </RelativeLayout>
-
    <Button
        android:id="@+id/next"
        android:layout_width="100dp"
@@ -48,7 +45,7 @@
        android:layout_marginBottom="16dp"
        android:backgroundTint="@color/gray"
        android:gravity="center"
-       android:text="@string/Next"
+       android:text="Next"
        android:textColor="@color/black"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"

@@ -25,6 +25,7 @@
         <activity android:name=".page.IndexActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SingUpActivity" />
+        <activity android:name=".page.WelcomePageActivity" />
     </application>
 
 </manifest>

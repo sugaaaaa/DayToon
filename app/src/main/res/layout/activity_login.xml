@@ -66,19 +66,18 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:id="@+id/emailbtn"
+            android:id="@+id/emailTvLogin"
             android:layout_below="@id/lin1"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/m30"
             android:layout_marginEnd="@dimen/m30"
             android:layout_marginStart="@dimen/m30">
             <EditText
-                android:id="@+id/editTextTextEmailAddress"
+                android:id="@+id/emailLogin"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@id/lin1"
-                android:background="@color/gray"
-                android:backgroundTint="@color/gray"
+                android:background="@drawable/bg_color"
                 android:ems="10"
                 android:hint="@string/Email"
                 android:inputType="textEmailAddress"
@@ -91,18 +90,18 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/passbtn"
+            android:id="@+id/passTvLogin"
            android:layout_marginTop="@dimen/m10"
             android:layout_marginEnd="@dimen/m30"
             android:layout_marginStart="@dimen/m30"
-            android:layout_below="@id/emailbtn"
+            android:layout_below="@id/emailTvLogin"
             app:passwordToggleEnabled="true">
             <EditText
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/passLogin"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/editTextTextEmailAddress"
-                android:background="@color/gray"
+                android:layout_below="@id/emailLogin"
+                android:background="@drawable/bg_color"
                 android:backgroundTint="@color/gray"
                 android:ems="10"
                 android:hint="@string/Password"
@@ -208,5 +207,18 @@
             android:textColor="@color/white">
         </TextView>
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nextLogin"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/s16"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray"
+        android:gravity="center"
+        android:layout_marginStart="340dp"
+        android:text="@string/Next"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints">
+    </TextView>
 
 </RelativeLayout>
