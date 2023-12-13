@@ -22,6 +22,7 @@
     <string name="Password">Password</string>
     <string name="Email">Email</string>
     <string name="Login">Login</string>
+    <string name="Logout">Logout</string>
     <string name="SignUp">Sign Up</string>
     <string name="Orloginwith"> or login with</string>
     <string name="HaveProblem">Have problem with logging in?</string>
@@ -33,4 +34,15 @@
     <string name="fgpassword">Forget Password?</string>
     <string name="already">Already have account?Login</string>
     <string name="image">Image</string>
+    <string name="google">Login with Google</string>
+    <string name="Mine">Mine</string>
+
+    <string name="product">Product</string>
+    <string name="email">Email</string>
+    <string name="number">Phone Number</string>
+    <string name="gender">Gender</string>
+    <string name="birthday">Birthday</string>
+    <string name="address">Address</string>
+    <string name="products">Show more</string>
+
 </resources>
