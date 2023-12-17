@@ -5,6 +5,11 @@ plugins {
 }
 
 android {
+
+    buildFeatures {
+        dataBinding true
+    }
+
     namespace 'kh.edu.rupp.ite.daytoon'
     compileSdk 33
 

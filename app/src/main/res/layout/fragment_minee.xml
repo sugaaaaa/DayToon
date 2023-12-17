@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -24,8 +25,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:paddingStart="16dp"
-            android:paddingEnd="16dp"
             android:paddingTop="16dp"
+            android:paddingEnd="16dp"
             android:paddingBottom="16dp">
 
             <!-- Profile Picture -->
@@ -34,18 +35,17 @@
                 android:layout_width="96dp"
                 android:layout_height="96dp"
                 android:paddingEnd="10dp"
-                android:src="@drawable/ic_action_profile"
-                />
+                android:src="@drawable/ic_action_profile" />
 
             <!-- Login Button -->
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:text="Login"
-                android:background="@color/dark_blue"
                 android:layout_gravity="center_vertical"
-                android:layout_marginStart="10dp" />
-
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/gray"
+                android:text="Login"
+                android:textColor="@color/black" />
         </LinearLayout>
 
         <!-- Information Section -->
@@ -68,12 +68,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:drawableStart="@drawable/ic_action_profile"
+                    android:drawableStart="@drawable/ic_action_person"
                     android:drawablePadding="8dp"
                     android:padding="10dp"
                     android:text="Name"
-                    android:textColor="@android:color/black"
-                    android:textSize="16dp" />
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -81,8 +81,8 @@
                     android:layout_alignParentEnd="true"
                     android:padding="10dp"
                     android:text="John Doe"
-                    android:textColor="@android:color/black"
-                    android:textSize="16dp" />
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
             </RelativeLayout>
 
             <!-- Item 2 -->
@@ -95,12 +95,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:drawableStart="@drawable/ic_action_profile"
+                    android:layout_marginStart="-1dp"
+                    android:drawableStart="@drawable/ic_action_mail"
                     android:drawablePadding="8dp"
                     android:padding="10dp"
                     android:text="Email"
-                    android:textColor="@android:color/black"
-                    android:textSize="16dp" />
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -108,8 +109,8 @@
                     android:layout_alignParentEnd="true"
                     android:padding="10dp"
                     android:text="john.doe@example.com"
-                    android:textColor="@android:color/black"
-                    android:textSize="16dp" />
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
             </RelativeLayout>
 
             <!-- Add more RelativeLayouts for additional items -->
