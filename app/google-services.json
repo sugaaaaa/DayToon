@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "721407619957",
+    "project_id": "loginsingupwithotp-f8895",
+    "storage_bucket": "loginsingupwithotp-f8895.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721407619957:android:db1c272fcf7e15e65d993c",
+        "android_client_info": {
+          "package_name": "kh.edu.rupp.ite.daytoon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6dQaw5jXDTvlVhKGxQBxRTnNmmEhgtGU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

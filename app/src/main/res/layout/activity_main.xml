@@ -7,12 +7,12 @@
     android:background="#5BA278"
     android:backgroundTint="#5BA278"
     android:layout_gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".page.MainActivity">
 
     <RelativeLayout
         android:layout_width="499dp"
         android:layout_height="500dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="160dp"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -21,30 +21,36 @@
 
         <TextView
             android:id="@+id/welcome"
+            android:layout_marginStart="60dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@string/welcome"
             android:textColor="@color/white"
-            android:textSize="30dp"
-            android:text="Welcome to"
-            android:layout_marginStart="100dp">
+            android:textSize="30sp">
+
         </TextView>
+
         <ImageView
             android:id="@+id/image1"
-            android:layout_below="@+id/welcome"
             android:layout_width="wrap_content"
             android:layout_height="200dp"
+            android:layout_marginEnd="90dp"
+            android:layout_below="@+id/welcome"
+            android:layout_marginTop="-1dp"
             android:src="@drawable/img">
+
         </ImageView>
+
         <TextView
-            android:layout_marginStart="160dp"
             android:id="@+id/daytoon"
-            android:layout_below="@+id/image1"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/image1"
+            android:gravity="center"
+            android:layout_marginStart="120dp"
             android:text="@string/DayTOON"
             android:textColor="@color/white"
             android:textSize="45dp"
-            android:gravity="center"
             android:textStyle="bold" />
     </RelativeLayout>
 

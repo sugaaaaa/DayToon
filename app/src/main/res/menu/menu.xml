@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mnucomic"
+        android:icon="@drawable/ic_action_name"
+        android:title="COMIC" />
+
+    <item
+        android:id="@+id/mnustory"
+        android:icon="@drawable/ic_action_story"
+        android:title="STORY" />
+    <item
+        android:id="@+id/mnulibrary"
+        android:icon="@drawable/ic_action_library"
+        android:title="LIBRARY" />
+    <item
+        android:id="@+id/mnuprofile"
+        android:icon="@drawable/ic_action_mine"
+        android:title=" MINE" />
+
+    <item
+        android:id="@+id/mnumore"
+        android:icon="@drawable/ic_action_more"
+        android:title=" MORE" />
+
+</menu>
