@@ -1,5 +1,6 @@
 package kh.edu.rupp.ite.daytoon.fragment
 
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -16,9 +17,11 @@ class MineFragment : Fragment() {
     ): View? {
         binding = FragmentMineeBinding.inflate(inflater, container, false)
         return binding?.root
+
     }
     override fun onDestroyView() {
         super.onDestroyView()
         binding = null
     }
+
 }
