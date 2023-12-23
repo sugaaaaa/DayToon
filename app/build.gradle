@@ -30,9 +30,11 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.7'
+
     }
     buildFeatures {
         viewBinding = true
+
     }
 }
 
