@@ -29,17 +29,19 @@
        android:textSize="20sp"
        android:textStyle="bold">
    </TextView>
-
-   <TextView
-       android:id="@+id/nextLogin"
-       android:layout_width="match_parent"
-       android:layout_marginTop="@dimen/s16"
-       android:layout_height="wrap_content"
+   <Button
+       android:layout_gravity="center"
+       android:id="@+id/next"
+       android:layout_width="100dp"
+       android:layout_height="50dp"
+       android:layout_marginEnd="24dp"
+       android:layout_marginTop="@dimen/m60"
+       android:layout_marginBottom="16dp"
        android:backgroundTint="@color/gray"
        android:gravity="center"
-       android:text="@string/Next"
-       android:textColor="@color/white"
+       android:text="Next"
+       android:textColor="@color/black"
        tools:ignore="MissingConstraints">
-   </TextView>
+   </Button>
 
 </LinearLayout>

@@ -25,7 +25,7 @@ class WelcomePageActivity: AppCompatActivity(){
 
         bottomButton.setOnClickListener {
 
-            val intent = Intent(this, IndexActivity::class.java)
+            val intent = Intent(this, Welcome2Activity::class.java)
 
             startActivity(intent)
         }

@@ -16,9 +16,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root);
 
         Handler().postDelayed({
-            val intent = Intent(this, TypeStoryActivity::class.java)
+            val intent = Intent(this, WelcomePageActivity::class.java)
             startActivity(intent)
             finish()
-        }, 5000)
+        }, 1500)
     }
 }
