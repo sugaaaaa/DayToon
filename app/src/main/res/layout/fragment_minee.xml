@@ -37,14 +37,15 @@
                 android:layout_height="100dp"
                 android:src="@drawable/ic_action_profile" />
             <!-- Login Button -->
-<!--            <Button-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="50dp"-->
-<!--                android:layout_gravity="center_vertical"-->
-<!--                android:layout_marginStart="10dp"-->
-<!--                android:backgroundTint="@color/gray"-->
-<!--                android:text="Login"-->
-<!--                android:textColor="@color/black" />-->
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/lavendor"
+                android:text="Logout"
+                android:textColor="@color/black" />
         </LinearLayout>
 
         <!-- Information Section -->

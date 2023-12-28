@@ -1,6 +1,8 @@
 package kh.edu.rupp.ite.daytoon
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +16,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var database: DatabaseReference
+    private lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +25,12 @@ class LoginActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
         database = FirebaseDatabase.getInstance().reference.child("users")
+        sharedPreferences = getPreferences(Context.MODE_PRIVATE)
+
+        // Check if the user is already logged in
+        if (isLoggedIn()) {
+            redirectToIndexActivity()
+        }
 
         binding.btnlogin.setOnClickListener {
             val email = binding.emailLogin.text.toString()
@@ -39,10 +48,11 @@ class LoginActivity : AppCompatActivity() {
                                 val userReference = database.child(user.uid)
                                 userReference.child("email").setValue(email)
 
+                                // Remember the user
+                                saveLoginStatus(true)
+
                                 // Continue with starting the IndexActivity
-                                val intent = Intent(this@LoginActivity, IndexActivity::class.java)
-                                startActivity(intent)
-                                finish()
+                                redirectToIndexActivity()
                             }
                         } else {
                             Toast.makeText(this, "LogIn Failed", Toast.LENGTH_SHORT).show()
@@ -57,5 +67,25 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this@LoginActivity, SingUpActivity::class.java)
             startActivity(intent)
         }
+    }
+
+    // Check if the user is logged in
+    private fun isLoggedIn(): Boolean {
+        return sharedPreferences.getBoolean("isLoggedIn", false)
+    }
+
+    // Save the login status
+    private fun saveLoginStatus(isLoggedIn: Boolean) {
+        with(sharedPreferences.edit()) {
+            putBoolean("isLoggedIn", isLoggedIn)
+            apply()
+        }
+    }
+
+    // Redirect to the IndexActivity
+    private fun redirectToIndexActivity() {
+        val intent = Intent(this@LoginActivity, IndexActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 }

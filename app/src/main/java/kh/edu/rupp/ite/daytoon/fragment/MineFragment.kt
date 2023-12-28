@@ -1,5 +1,6 @@
 package kh.edu.rupp.ite.daytoon.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,11 +11,13 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.*
 import com.google.firebase.ktx.Firebase
 import kh.edu.rupp.ite.daytoon.databinding.FragmentMineeBinding
+import kh.edu.rupp.ite.daytoon.page.IndexActivity
 
 class MineFragment : Fragment() {
     private var binding: FragmentMineeBinding? = null
     private lateinit var databaseReference: DatabaseReference
     private lateinit var auth: FirebaseAuth
+    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -57,6 +60,19 @@ class MineFragment : Fragment() {
                     // Handle error
                 }
             })
+        }
+
+
+        firebaseAuth = FirebaseAuth.getInstance()
+
+        binding?.btnLogout?.setOnClickListener {
+            // Sign out the user
+            firebaseAuth.signOut()
+
+            // Redirect to the WelcomePageActivity after sign-out
+            val intent = Intent(requireActivity(), IndexActivity::class.java)
+            startActivity(intent)
+            requireActivity().finish()
         }
     }
 }

@@ -18,7 +18,7 @@ class Welcome2Activity : AppCompatActivity() {
 
         binding.next.setOnClickListener {
             // Launch the SelectGenresActivity to allow the user to select genres
-            val intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, TypeStoryActivity::class.java)
             startActivity(intent)
         }
     }

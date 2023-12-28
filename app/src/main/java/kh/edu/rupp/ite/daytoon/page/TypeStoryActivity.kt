@@ -28,7 +28,7 @@ class TypeStoryActivity : AppCompatActivity() {
         // Set click listener for the "Next" button
         binding.btnNext.setOnClickListener {
             // Launch the SelectGenresActivity to allow the user to select genres
-            val intent = Intent(this, IndexActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
 
@@ -59,7 +59,7 @@ class TypeStoryActivity : AppCompatActivity() {
             button.setBackgroundColor(ContextCompat.getColor(this, R.color.gray))
         } else {
             selectedGenres.add(genre)
-            button.setBackgroundColor(ContextCompat.getColor(this, R.color.selectedColor))
+            button.setBackgroundColor(ContextCompat.getColor(this, R.color.Green))
         }
     }
     private fun displaySelectedGenres() {
