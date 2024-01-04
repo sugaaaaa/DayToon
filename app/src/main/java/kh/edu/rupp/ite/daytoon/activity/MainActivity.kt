@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.daytoon.page
+package kh.edu.rupp.ite.daytoon.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -16,9 +16,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root);
 
         Handler().postDelayed({
-            val intent = Intent(this, TypeStoryActivity::class.java)
+            val intent = Intent(this, WelcomePageActivity::class.java)
             startActivity(intent)
             finish()
-        }, 5000)
+        }, 1500)
     }
 }

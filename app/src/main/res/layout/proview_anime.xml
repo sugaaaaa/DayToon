@@ -10,7 +10,7 @@
         app:cardCornerRadius="@dimen/m30">
 
         <ImageView
-            android:id="@+id/image_view"
+            android:id="@+id/imgURL"
             android:layout_width="@dimen/m250"
             android:layout_height="@dimen/m250"
             android:scaleType="centerCrop" />

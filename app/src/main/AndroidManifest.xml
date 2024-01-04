@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,19 +14,21 @@
         android:theme="@style/Theme.DayToon"
         tools:targetApi="31">
         <activity
-            android:name=".page.MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".page.TypeStoryActivity" />
-        <activity android:name=".page.IndexActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".SingUpActivity" />
-        <activity android:name=".page.WelcomePageActivity" />
-        <activity android:name=".SingOutActivity" />
+        <activity android:name=".activity.TypeStoryActivity"
+            android:exported="true"/>
+        <activity android:name=".activity.IndexActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.SingUpActivity" />
+        <activity android:name=".activity.WelcomePageActivity" />
+        <activity android:name=".activity.SingOutActivity" />
+        <activity android:name=".activity.Welcome2Activity" />
     </application>
 
 </manifest>

@@ -1,12 +1,10 @@
-package kh.edu.rupp.ite.daytoon.page
+package kh.edu.rupp.ite.daytoon.activity
 
-import android.app.AppComponentFactory
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-import kh.edu.rupp.ite.daytoon.LoginActivity
 import kh.edu.rupp.ite.daytoon.R
 
 import kh.edu.rupp.ite.daytoon.databinding.ActicityWelcomeBinding
@@ -25,7 +23,7 @@ class WelcomePageActivity: AppCompatActivity(){
 
         bottomButton.setOnClickListener {
 
-            val intent = Intent(this, IndexActivity::class.java)
+            val intent = Intent(this, Welcome2Activity::class.java)
 
             startActivity(intent)
         }

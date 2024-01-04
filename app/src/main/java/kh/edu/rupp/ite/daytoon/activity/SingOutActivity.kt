@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.daytoon
+package kh.edu.rupp.ite.daytoon.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import kh.edu.rupp.ite.daytoon.databinding.ActivitySingoutBinding
-import kh.edu.rupp.ite.daytoon.page.IndexActivity
 
 class SingOutActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySingoutBinding

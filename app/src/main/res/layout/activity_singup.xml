@@ -128,20 +128,6 @@
         android:backgroundTint="@color/Green">
     </Button>
     <TextView
-        android:id="@+id/text3"
-        android:layout_below="@id/singup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="155dp"
-        android:gravity="center"
-        android:layout_marginTop="@dimen/m10"
-        android:text="@string/Orloginwith"
-        android:textColor="@color/white"
-        android:textSize="16dp">
-    </TextView>
-
-
-    <TextView
         android:layout_marginTop="@dimen/m10"
         android:gravity="center"
         android:id="@+id/textlogin"
