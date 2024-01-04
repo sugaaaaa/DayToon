@@ -55,7 +55,7 @@ class StoryFragment : Fragment() {
                         // Successfully retrieved anime list, now you can do something with it
                         // Example: Log the first anime's title
                         showAnimeList(animeList.getData())
-                        Toast.makeText(context, "Anime Show", Toast.LENGTH_SHORT).show()
+//                        Toast.makeText(context, "Anime Show", Toast.LENGTH_SHORT).show()
 
                         // Uncomment the following line to show the anime list
                         // showAnimeList(animeList.getData())

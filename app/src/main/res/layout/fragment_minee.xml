@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/app_background"
+    android:background="@color/white"
     tools:ignore="MissingDefaultResource">
 
     <LinearLayout
@@ -73,7 +73,7 @@
                     android:drawablePadding="8dp"
                     android:padding="10dp"
                     android:text="Name"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="16sp" />
 
             </RelativeLayout>
@@ -94,7 +94,7 @@
                     android:drawablePadding="8dp"
                     android:padding="10dp"
                     android:text="Email"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="16sp" />
 
 <!--                <TextView-->

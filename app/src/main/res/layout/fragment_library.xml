@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/app_background"
+        android:background="@color/white"
         tools:ignore="MissingDefaultResource">
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/topAppBar"
