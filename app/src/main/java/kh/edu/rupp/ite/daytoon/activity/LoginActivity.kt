@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.daytoon
+package kh.edu.rupp.ite.daytoon.activity
 
 import android.content.Context
 import android.content.Intent
@@ -10,7 +10,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kh.edu.rupp.ite.daytoon.databinding.ActivityLoginBinding
-import kh.edu.rupp.ite.daytoon.page.IndexActivity
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding

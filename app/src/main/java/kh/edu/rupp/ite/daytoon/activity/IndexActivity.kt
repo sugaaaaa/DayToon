@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.daytoon.page
+package kh.edu.rupp.ite.daytoon.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

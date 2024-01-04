@@ -11,7 +11,7 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.*
 import com.google.firebase.ktx.Firebase
 import kh.edu.rupp.ite.daytoon.databinding.FragmentMineeBinding
-import kh.edu.rupp.ite.daytoon.page.IndexActivity
+import kh.edu.rupp.ite.daytoon.activity.IndexActivity
 
 class MineFragment : Fragment() {
     private var binding: FragmentMineeBinding? = null

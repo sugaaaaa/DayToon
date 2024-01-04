@@ -1,9 +1,8 @@
-package kh.edu.rupp.ite.daytoon.page
+package kh.edu.rupp.ite.daytoon.activity
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import kh.edu.rupp.ite.daytoon.LoginActivity
 import kh.edu.rupp.ite.daytoon.databinding.ActicityWelcome2Binding
 
 class Welcome2Activity : AppCompatActivity() {

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/app_background"
     tools:ignore="MissingDefaultResource">
+
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/topAppBar"
@@ -73,6 +76,23 @@
                android:src="@drawable/camera"
                android:contentDescription="@string/image" />
        </LinearLayout>
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_marginTop="@dimen/m10"
+           android:id="@+id/emailTvLogin"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+        >
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:src="@drawable/img_10">
+           </ImageView>
+       </com.google.android.material.textfield.TextInputLayout>
+        <TextureView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        </TextureView>
 
    </LinearLayout>
 </FrameLayout>

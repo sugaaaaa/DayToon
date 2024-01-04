@@ -1,14 +1,12 @@
-package kh.edu.rupp.ite.daytoon.page
+package kh.edu.rupp.ite.daytoon.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import kh.edu.rupp.ite.daytoon.LoginActivity
 import kh.edu.rupp.ite.daytoon.R
 import androidx.core.content.ContextCompat
-import kh.edu.rupp.ite.daytoon.databinding.ActivityTypeBinding
 import kh.edu.rupp.ite.daytoon.databinding.ActivityTypestoryBinding
 
 class TypeStoryActivity : AppCompatActivity() {

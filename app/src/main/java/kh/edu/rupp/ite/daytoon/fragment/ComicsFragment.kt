@@ -28,4 +28,5 @@ class ComicsFragment :  Fragment(){
         // Clean up the binding when the view is destroyed
         _binding = null
     }
+
 }

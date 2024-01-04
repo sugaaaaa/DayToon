@@ -1,16 +1,12 @@
-package kh.edu.rupp.ite.daytoon
+package kh.edu.rupp.ite.daytoon.activity
 
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doOnTextChanged
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.ktx.Firebase
-import kh.edu.rupp.ite.daytoon.databinding.ActivityLoginBinding
 import kh.edu.rupp.ite.daytoon.databinding.ActivityOtpBinding
-import java.util.Random
 import kotlin.random.nextInt
 
 class OtpActivity: AppCompatActivity() {
