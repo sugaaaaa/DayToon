@@ -1,7 +1,6 @@
-package kh.edu.rupp.ite.daytoon.fragment
-
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,7 +10,7 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.*
 import com.google.firebase.ktx.Firebase
 import kh.edu.rupp.ite.daytoon.databinding.FragmentMineeBinding
-import kh.edu.rupp.ite.daytoon.activity.IndexActivity
+import kh.edu.rupp.ite.daytoon.controller.activity.LoginActivity
 
 class MineFragment : Fragment() {
     private var binding: FragmentMineeBinding? = null
@@ -39,6 +38,9 @@ class MineFragment : Fragment() {
         auth = Firebase.auth
         val currentUser = auth.currentUser
 
+        // Check authentication state to toggle button visibility
+        updateButtonVisibility(currentUser != null)
+
         if (currentUser != null) {
             databaseReference = FirebaseDatabase.getInstance().reference.child("users")
                 .child(currentUser.uid)
@@ -61,18 +63,41 @@ class MineFragment : Fragment() {
                 }
             })
         }
-
-
         firebaseAuth = FirebaseAuth.getInstance()
 
         binding?.btnLogout?.setOnClickListener {
+            // Show loading indicator while signing out
+            binding?.btnLogout?.isEnabled = false // Disable the button
+            binding?.progressBar?.visibility = View.VISIBLE // Show the progress bar
+
             // Sign out the user
             firebaseAuth.signOut()
 
-            // Redirect to the WelcomePageActivity after sign-out
-            val intent = Intent(requireActivity(), IndexActivity::class.java)
+            // Toggle button visibility
+            updateButtonVisibility(false)
+
+            // Redirect to the LoginActivity after sign-out
+            val intent = Intent(requireActivity(), LoginActivity::class.java)
             startActivity(intent)
             requireActivity().finish()
         }
+
+        // In MineFragment
+        binding?.btnSignIn?.setOnClickListener {
+            val loginIntent = Intent(requireContext(), LoginActivity::class.java)
+            startActivity(loginIntent)
+        }
+
+        // Inside onViewCreated or wherever you handle authentication status
+        auth.addAuthStateListener { auth ->
+            val currentUser = auth.currentUser
+            updateButtonVisibility(currentUser != null)
+        }
+    }
+
+    // Function to update button visibility
+    private fun updateButtonVisibility(isUserLoggedIn: Boolean) {
+        binding?.btnLogout?.visibility = if (isUserLoggedIn) View.VISIBLE else View.GONE
+        binding?.btnSignIn?.visibility = if (isUserLoggedIn) View.GONE else View.VISIBLE
     }
 }

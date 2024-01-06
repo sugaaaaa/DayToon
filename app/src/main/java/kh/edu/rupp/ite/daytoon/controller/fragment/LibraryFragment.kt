@@ -1,6 +1,6 @@
-package kh.edu.rupp.ite.daytoon.fragment
+package kh.edu.rupp.ite.daytoon.controller.fragment
 
-import kh.edu.rupp.ite.daytoon.viewmodel.LibraryViewModel  // Adjust the package name accordingly
+import kh.edu.rupp.ite.daytoon.view.viewmodel.LibraryViewModel  // Adjust the package name accordingly
 
 import android.os.Bundle
 import android.view.LayoutInflater

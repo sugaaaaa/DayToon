@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.daytoon.activity
+package kh.edu.rupp.ite.daytoon.controller.activity
 
 import android.content.Context
 import android.content.Intent
@@ -12,6 +12,7 @@ import com.google.firebase.database.FirebaseDatabase
 import kh.edu.rupp.ite.daytoon.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityLoginBinding
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var database: DatabaseReference
@@ -80,11 +81,11 @@ class LoginActivity : AppCompatActivity() {
             apply()
         }
     }
-
     // Redirect to the IndexActivity
     private fun redirectToIndexActivity() {
         val intent = Intent(this@LoginActivity, IndexActivity::class.java)
         startActivity(intent)
         finish()
     }
+
 }

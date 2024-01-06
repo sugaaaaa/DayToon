@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.daytoon.activity
+package kh.edu.rupp.ite.daytoon.controller.activity
 
 import android.content.Intent
 import android.os.Bundle

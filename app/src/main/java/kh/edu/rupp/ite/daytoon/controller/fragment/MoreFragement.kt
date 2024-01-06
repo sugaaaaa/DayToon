@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.daytoon.fragment
+package kh.edu.rupp.ite.daytoon.controller.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

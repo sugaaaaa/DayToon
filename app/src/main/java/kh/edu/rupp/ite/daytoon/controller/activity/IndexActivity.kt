@@ -1,15 +1,15 @@
-package kh.edu.rupp.ite.daytoon.activity
+package kh.edu.rupp.ite.daytoon.controller.activity
 
+import MineFragment
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import kh.edu.rupp.ite.daytoon.R
 import kh.edu.rupp.ite.daytoon.databinding.ActivityIndexBinding
-import kh.edu.rupp.ite.daytoon.fragment.ComicsFragment
-import kh.edu.rupp.ite.daytoon.fragment.LibraryFragment
-import kh.edu.rupp.ite.daytoon.fragment.MineFragment
-import kh.edu.rupp.ite.daytoon.fragment.MoreFragement
-import kh.edu.rupp.ite.daytoon.fragment.StoryFragment
+import kh.edu.rupp.ite.daytoon.controller.fragment.ComicsFragment
+import kh.edu.rupp.ite.daytoon.controller.fragment.LibraryFragment
+import kh.edu.rupp.ite.daytoon.controller.fragment.MoreFragement
+import kh.edu.rupp.ite.daytoon.controller.fragment.StoryFragment
 
 class IndexActivity : AppCompatActivity(){
 

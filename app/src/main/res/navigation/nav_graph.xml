@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="kh.edu.rupp.ite.daytoon.fragment.StoryFragment"
+        android:name="kh.edu.rupp.ite.daytoon.controller.fragment.StoryFragment"
         android:label="StoryFragment"
         tools:layout="@layout/fragment_story" />
 
