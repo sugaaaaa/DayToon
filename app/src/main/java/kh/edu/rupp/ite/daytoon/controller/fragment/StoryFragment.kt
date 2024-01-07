@@ -31,12 +31,10 @@ class StoryFragment : Fragment() {
         binding = FragmentStoryBinding.inflate(inflater, container, false)
         return binding.root
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         loadAnimeFromServer()
     }
-
     private fun loadAnimeFromServer() {
         Log.d("[AnimeFragment]", "Attempting to load anime from the server.")
 
@@ -72,7 +70,6 @@ class StoryFragment : Fragment() {
             }
         })
     }
-
     private fun showAnimeList(animeList: List<Anime>?) {
         if (animeList.isNullOrEmpty()) {
             // Handle empty data case
@@ -86,8 +83,5 @@ class StoryFragment : Fragment() {
             binding.productRecyclerView.adapter = adapter
         }
     }
-
-
-
 }
 

@@ -44,7 +44,7 @@ class IndexActivity : AppCompatActivity(){
         //Replace Fragment in lytFragment
         fragmentTransaction.replace(R.id.lytFragment, fragment)
 
-        //Committ
+        //Commit
         fragmentTransaction.commit()
     }
     override fun onDestroy() {

@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.squareup.picasso.Picasso
+import kh.edu.rupp.ite.daytoon.controller.fragment.ComicsFragment
 import kh.edu.rupp.ite.daytoon.model.StoryNovel
 import kh.edu.rupp.ite.daytoon.databinding.ViewHolderStorynovelBinding
 
@@ -28,7 +29,7 @@ class StoryNovelAdapter : ListAdapter<StoryNovel, StoryNovelAdapter.StoryNovelVi
 
     private var listener: OnItemClickListener? = null
 
-    fun setOnItemClickListener(listener: OnItemClickListener) {
+    fun setOnItemClickListener(listener: ComicsFragment) {
         this.listener = listener
     }
 
