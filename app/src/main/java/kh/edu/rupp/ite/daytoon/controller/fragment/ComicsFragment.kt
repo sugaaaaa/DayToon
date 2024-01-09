@@ -117,7 +117,6 @@ import retrofit2.converter.gson.GsonConverterFactory
                     // Handle unsuccessful response
                     Toast.makeText(context, "Anime load went wrong", Toast.LENGTH_SHORT).show()
                 }
-
             }
         })
     }

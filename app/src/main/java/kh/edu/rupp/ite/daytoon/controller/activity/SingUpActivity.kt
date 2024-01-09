@@ -31,7 +31,6 @@ class SingUpActivity : AppCompatActivity() {
                 firebaseAuth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {
-                            // Get the current user's UID
                             val user = firebaseAuth.currentUser
                             user?.let {
                                 // Store user information in the Realtime Database
@@ -52,7 +51,6 @@ class SingUpActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()
             }
         }
-
         binding.textlogin.setOnClickListener {
             val intent = Intent(this@SingUpActivity, LoginActivity::class.java)
             startActivity(intent)

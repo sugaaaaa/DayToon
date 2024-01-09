@@ -19,38 +19,30 @@ class WelcomePageActivity : AppCompatActivity() {
         binding = ActicityWelcomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Initialize kh.edu.rupp.ite.daytoon.viewmodel.PreferencesManager
         preferencesManager = PreferencesManager(this)
 
-        // Check if the welcome page has been shown
         if (!preferencesManager.isWelcomePageShown) {
-            // It's the first time, show the welcome page
 
             val bottomButton: Button = findViewById(R.id.next)
 
             bottomButton.setOnClickListener {
-                // Save the flag indicating that the welcome page has been shown
                 preferencesManager.isWelcomePageShown = true
-                // Launch the kh.edu.rupp.ite.daytoon.activity.Welcome2Activity
                 startWelcome2Activity()
             }
         } else {
-            // It's not the first time, redirect to IndexActivity
             startIndexActivity()
         }
     }
 
     private fun startWelcome2Activity() {
-        // Launch the kh.edu.rupp.ite.daytoon.activity.Welcome2Activity
         val intent = Intent(this, Welcome2Activity::class.java)
         startActivity(intent)
-        finish() // Optional: finish the current activity if you don't want the user to come back to it
+        finish()
     }
 
     private fun startIndexActivity() {
-        // Redirect the user to IndexActivity
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
-        finish() // Optional: finish the current activity if you don't want the user to come back to it
+        finish()
     }
 }

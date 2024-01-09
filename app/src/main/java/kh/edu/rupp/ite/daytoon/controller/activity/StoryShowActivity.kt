@@ -24,7 +24,6 @@ class StoryShowActivity: AppCompatActivity() {
         binding = ActivityStoryshowBinding.inflate(layoutInflater)
         setContentView(binding.root);
     }
-
     override fun onCreateView(name: String, context: Context, attrs: AttributeSet): View? {
         return super.onCreateView(name, context, attrs)
         loadStoryFromServer()
@@ -43,25 +42,17 @@ class StoryShowActivity: AppCompatActivity() {
 //                Toast.makeText(context, "Anime load went wrong", Toast.LENGTH_SHORT).show()
                 Log.e("[AnimeFragment]", "load failed" + t.message)
             }
-
-            override fun onResponse(
-                call: Call<List<StoryNovel?>?>,
-                response: Response<List<StoryNovel?>?>
+            override fun onResponse(call: Call<List<StoryNovel?>?>,response: Response<List<StoryNovel?>?>
             ) {
-
                 if (response.isSuccessful) {
                     val storyNovel: List<StoryNovel?>? = response.body()
-
                     if (storyNovel != null) {
-//                        showStoryNovelUpdate(storyNovel)
-//                        Toast.makeText(context, "Anime Show", Toast.LENGTH_SHORT).show()
-
+//                        detailStory(storyNovel)
                     } else {
 //                        Toast.makeText(context, "Anime list is null", Toast.LENGTH_SHORT).show()
                     }
                 } else {
-                    // Handle unsuccessful response
-//                    Toast.makeText(context, "Anime load went wrong", Toast.LENGTH_SHORT).show()
+//                    Toast.makeText(this, "Anime load went wrong", Toast.LENGTH_SHORT).show()
                 }
             }
         })

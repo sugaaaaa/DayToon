@@ -57,7 +57,6 @@ class MineFragment : Fragment() {
                         binding?.Tname?.text = "Name: $name"
                     }
                 }
-
                 override fun onCancelled(databaseError: DatabaseError) {
                     // Handle error
                 }
@@ -66,14 +65,12 @@ class MineFragment : Fragment() {
         firebaseAuth = FirebaseAuth.getInstance()
 
         binding?.btnLogout?.setOnClickListener {
-            // Show loading indicator while signing out
             binding?.btnLogout?.isEnabled = false // Disable the button
             binding?.progressBar?.visibility = View.VISIBLE // Show the progress bar
 
             // Sign out the user
             firebaseAuth.signOut()
 
-            // Toggle button visibility
             updateButtonVisibility(false)
 
             // Redirect to the LoginActivity after sign-out
@@ -82,20 +79,15 @@ class MineFragment : Fragment() {
             requireActivity().finish()
         }
 
-        // In MineFragment
         binding?.btnSignIn?.setOnClickListener {
             val loginIntent = Intent(requireContext(), LoginActivity::class.java)
             startActivity(loginIntent)
         }
-
-        // Inside onViewCreated or wherever you handle authentication status
         auth.addAuthStateListener { auth ->
             val currentUser = auth.currentUser
             updateButtonVisibility(currentUser != null)
         }
     }
-
-    // Function to update button visibility
     private fun updateButtonVisibility(isUserLoggedIn: Boolean) {
         binding?.btnLogout?.visibility = if (isUserLoggedIn) View.VISIBLE else View.GONE
         binding?.btnSignIn?.visibility = if (isUserLoggedIn) View.GONE else View.VISIBLE
