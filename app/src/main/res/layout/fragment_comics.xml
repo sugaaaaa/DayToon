@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,19 +9,24 @@
     android:background="@color/white"
     tools:ignore="MissingDefaultResource">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/topAppBar"
         android:gravity="center"
         android:background="@color/app_background"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
 
    <LinearLayout
        android:layout_marginTop="10dp"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:orientation="vertical"
-       tools:ignore="UselessParent">
+       tools:ignore="MissingConstraints,UselessParent">
      <LinearLayout
          android:layout_width="match_parent"
          android:layout_height="wrap_content">
@@ -75,6 +80,11 @@
                android:src="@drawable/camera"
                android:contentDescription="@string/image" />
        </LinearLayout>
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+       </ScrollView>
        <com.google.android.material.textfield.TextInputLayout
            android:layout_width="match_parent"
            android:id="@+id/emailTvLogin"
@@ -130,5 +140,27 @@
                tools:layout_editor_absoluteY="90dp"
                tools:listitem="@layout/view_holder_anime" />
        </HorizontalScrollView>
+
+       <TextView
+               android:layout_marginTop="@dimen/m10"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Story Updated"
+               android:textStyle="bold"
+               android:layout_marginStart="@dimen/s20"
+               android:textSize="@dimen/s20">
+           </TextView>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/StoryRecyclerView"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:clipToPadding="false"
+           app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+           app:spanCount="3"
+           tools:itemCount="6"
+           tools:listitem="@layout/view_holder_storynovel" />
    </LinearLayout>
-</FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

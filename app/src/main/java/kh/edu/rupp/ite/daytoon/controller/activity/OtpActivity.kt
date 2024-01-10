@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.daytoon.activity
+package kh.edu.rupp.ite.daytoon.controller.activity
 
 
 import android.os.Bundle
@@ -97,20 +97,3 @@ class OtpActivity: AppCompatActivity() {
          random= kotlin.random.Random.nextInt(100000..999999).toString()
      }
 }
-//singUp
-//binding.singup.setOnClickListener{
-//    if(binding.emailET.text.toString().isEmpty()){
-//        binding.emailTv.error="Enter Email"
-//    }else if (binding.passwordET.text.toString().isEmpty()){
-//        binding.passwordTv.error="Enter Password"
-//    }else if (binding.cmfpasswordET.text.toString().isEmpty()){
-//        binding.cmfpassTv.error="Enter Password again!!"
-//    }else if (!(binding.passwordET.text.toString().equals(binding.cmfpasswordET.text.toString()))){
-//        binding.cmfpassTv.error="Password must not same"
-//    }else {
-//        var intent = Intent(this@SingUpActivity, OtpActivity::class.java)
-//        intent.putExtra("email", binding.emailET.text.toString())
-//        intent.putExtra("pass", binding.passwordET.text.toString())
-//        startActivity(intent)
-//    }
-//}

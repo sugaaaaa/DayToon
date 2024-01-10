@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.daytoon.api.model
+package kh.edu.rupp.ite.daytoon.model
 
 import com.google.gson.annotations.SerializedName
 

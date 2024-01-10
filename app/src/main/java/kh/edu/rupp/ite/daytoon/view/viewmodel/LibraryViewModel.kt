@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.daytoon.viewmodel
+package kh.edu.rupp.ite.daytoon.view.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.LiveData

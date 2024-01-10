@@ -47,5 +47,6 @@
     <string name="welcomeText">
 "Welcome to our Manga and Anime hub! Explore captivating stories, vibrant characters, and thrilling adventures"</string>
     <string name="welcomeText2">Enjoy the experience as the pages of manga and frames of anime unfold endless possibilities</string>
+    <string name="title_activity_story_show">StoryShowActivity</string>
 
 </resources>

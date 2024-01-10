@@ -3,6 +3,7 @@
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -36,16 +37,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/ic_action_profile" />
-            <!-- Login Button -->
-            <Button
-                android:id="@+id/btnLogout"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="10dp"
-                android:backgroundTint="@color/lavendor"
-                android:text="Logout"
-                android:textColor="@color/black" />
+
         </LinearLayout>
 
         <!-- Information Section -->
@@ -110,6 +102,34 @@
             <!-- Add more RelativeLayouts for additional items -->
 
         </LinearLayout>
+        <!-- ... your other layout elements ... -->
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/lavendor"
+            android:text="Logout"
+            android:textColor="@color/black" />
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/lavendor"
+            android:text="SignIn"
+            android:textColor="@color/black"
+            android:visibility="gone" />
     </LinearLayout>
 </FrameLayout>
 
