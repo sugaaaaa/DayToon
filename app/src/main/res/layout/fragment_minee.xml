@@ -3,9 +3,10 @@
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/app_background"
+    android:background="@color/white"
     tools:ignore="MissingDefaultResource">
 
     <LinearLayout
@@ -33,20 +34,10 @@
             <!-- Profile Picture -->
             <ImageView
                 android:id="@+id/imgProfile"
-                android:layout_width="96dp"
-                android:layout_height="96dp"
-                android:paddingEnd="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:src="@drawable/ic_action_profile" />
 
-            <!-- Login Button -->
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="10dp"
-                android:backgroundTint="@color/gray"
-                android:text="Login"
-                android:textColor="@color/black" />
         </LinearLayout>
 
         <!-- Information Section -->
@@ -66,6 +57,7 @@
                 android:layout_marginBottom="8dp">
 
                 <TextView
+                    android:id="@+id/Tname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
@@ -73,17 +65,9 @@
                     android:drawablePadding="8dp"
                     android:padding="10dp"
                     android:text="Name"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="16sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:padding="10dp"
-                    android:text="John Doe"
-                    android:textColor="@android:color/white"
-                    android:textSize="16sp" />
             </RelativeLayout>
 
             <!-- Item 2 -->
@@ -93,6 +77,7 @@
                 android:layout_marginBottom="8dp">
 
                 <TextView
+                    android:id="@+id/Temail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
@@ -101,22 +86,50 @@
                     android:drawablePadding="8dp"
                     android:padding="10dp"
                     android:text="Email"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="16sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:padding="10dp"
-                    android:text="john.doe@example.com"
-                    android:textColor="@android:color/white"
-                    android:textSize="16sp" />
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:text="Email"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:textSize="16sp" />-->
             </RelativeLayout>
 
             <!-- Add more RelativeLayouts for additional items -->
 
         </LinearLayout>
+        <!-- ... your other layout elements ... -->
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/lavendor"
+            android:text="Logout"
+            android:textColor="@color/black" />
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/lavendor"
+            android:text="SignIn"
+            android:textColor="@color/black"
+            android:visibility="gone" />
     </LinearLayout>
 </FrameLayout>
 

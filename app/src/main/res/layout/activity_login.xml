@@ -208,17 +208,16 @@
         </TextView>
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/nextLogin"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="@dimen/s16"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/gray"
-        android:gravity="center"
-        android:layout_marginStart="340dp"
-        android:text="@string/Next"
-        android:textColor="@color/white"
-        tools:ignore="MissingConstraints">
-    </TextView>
+<!--    <TextView-->
+<!--        android:id="@+id/nextLogin"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="340dp"-->
+<!--        android:layout_marginTop="@dimen/s16"-->
+<!--        android:backgroundTint="@color/gray"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/Next"-->
+<!--        android:textColor="@color/white"-->
+<!--        tools:ignore="MissingConstraints"></TextView>-->
 
 </RelativeLayout>

@@ -2,19 +2,23 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
     <data>
         <variable
             name="viewModel"
-            type="kh.edu.rupp.ite.daytoon.viewmodel.LibraryViewModel" />
+            type="kh.edu.rupp.ite.daytoon.view.viewmodel.LibraryViewModel" />
     </data>
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/app_background"
+        android:background="@color/white"
         tools:ignore="MissingDefaultResource">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:gravity="center"
+            android:background="@color/Greenie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -35,6 +39,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Comics"
+                    android:textColor="@color/white"
                     android:textSize="22sp"
                     android:clickable="true"
                     android:onClick="@{() -> viewModel.onComicsClick()}" />
@@ -45,20 +50,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Novels"
-                    android:textSize="@dimen/s16"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
                     android:clickable="true"
                     android:onClick="@{() -> viewModel.onNovelsClick()}" />
             </LinearLayout>
 
             <!-- Information Section -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingStart="16dp"
-                android:paddingTop="16dp"
-                android:paddingEnd="16dp"
-                android:paddingBottom="16dp">
 
                 <!-- Item 1 -->
                 <RelativeLayout
@@ -66,34 +64,47 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp">
 
-                    <TextView
-                        android:id="@+id/hello"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:id="@+id/search_bar"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentStart="true"
-                        android:drawablePadding="8dp"
-                        android:padding="10dp"
-                        android:text="@{viewModel.table1Visibility ? `table1` : ``}"
-                        android:textColor="@android:color/white"
-                        android:textSize="16sp" />
+                        android:layout_marginStart="@dimen/m10"
+                        android:layout_marginEnd="@dimen/m10"
+                        android:layout_marginBottom="@dimen/m10"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_color">
 
-                    <TextView
-                        android:layout_marginLeft="100dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="10dp"
-                        android:text="@{viewModel.table1Visibility ? `table2` : ``}"
-                        android:textColor="@android:color/white"
-                        android:textSize="16sp" />
+                        <ImageView
+                            android:id="@+id/icon"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/m10"
+                            android:src="@drawable/ic_action_sharch"
+                            android:contentDescription="@string/image" />
 
-                    <TextView
-                        android:layout_marginLeft="200dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="10dp"
-                        android:text="@{viewModel.table1Visibility ? `table3` : ``}"
-                        android:textColor="@android:color/white"
-                        android:textSize="16sp" />
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:hint="@string/search"
+                            android:inputType="text"
+                            android:autofillHints="@string/products" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="0dp"/>
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/m10"
+                            android:src="@drawable/camera"
+                            android:contentDescription="@string/image" />
+                    </LinearLayout>
+
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -105,12 +116,7 @@
                         android:layout_height="wrap_content"
                         android:text="@{viewModel.goodbyeVisibility ? `hello` : ``}" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@{viewModel.goodbyeVisibility ? `good bye` : ``}" />
                 </RelativeLayout>
             </LinearLayout>
-        </LinearLayout>
     </FrameLayout>
 </layout>

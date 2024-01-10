@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,19 +15,22 @@
         android:theme="@style/Theme.DayToon"
         tools:targetApi="31">
         <activity
-            android:name=".page.MainActivity"
+            android:name=".controller.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".page.TypeStoryActivity" />
-        <activity android:name=".page.IndexActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".SingUpActivity" />
-        <activity android:name=".page.WelcomePageActivity" />
-        <activity android:name=".SingOutActivity" />
+        <activity android:name=".controller.activity.IndexActivity" />
+        <activity android:name=".controller.activity.LoginActivity" />
+        <activity android:name=".controller.activity.SingUpActivity" />
+        <activity android:name=".controller.activity.SingOutActivity" />
+        <activity android:name=".controller.activity.TypeStoryActivity" />
+        <activity android:name=".controller.activity.WelcomePageActivity" />
+        <activity android:name=".controller.activity.Welcome2Activity" />
+        <activity android:name=".controller.activity.StoryShowActivity"/>
     </application>
 
 </manifest>

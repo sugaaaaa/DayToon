@@ -28,7 +28,7 @@
         </TextView>
 
         <LinearLayout
-            android:layout_marginStart="24dp"
+            android:gravity="center"
             android:layout_marginTop="20dp"
             android:id="@+id/colum1"
             android:layout_below="@+id/text1"
@@ -36,6 +36,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <Button
+                android:id="@+id/btn1"
                 android:backgroundTint="@color/gray"
                 android:layout_width="170dp"
                 android:layout_height="50dp"
@@ -44,6 +45,7 @@
                 style="?android:attr/buttonBarButtonStyle">
             </Button>
             <Button
+                android:id="@+id/btn2"
                 android:layout_marginStart="24dp"
                 android:backgroundTint="@color/gray"
                 android:text="@string/Fantasy"
@@ -55,7 +57,7 @@
             </Button>
         </LinearLayout>
         <LinearLayout
-            android:layout_marginStart="24dp"
+            android:gravity="center"
             android:layout_marginTop="10dp"
             android:id="@+id/colum2"
             android:layout_below="@+id/colum1"
@@ -63,6 +65,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <Button
+                android:id="@+id/btn3"
                 android:backgroundTint="@color/gray"
                 android:layout_width="170dp"
                 android:layout_height="50dp"
@@ -71,6 +74,7 @@
                 style="?android:attr/buttonBarButtonStyle">
             </Button>
             <Button
+                android:id="@+id/btn4"
                 android:layout_marginStart="24dp"
                 android:backgroundTint="@color/gray"
                 android:text="@string/Romance"
@@ -82,15 +86,16 @@
             </Button>
         </LinearLayout>
         <LinearLayout
-            android:layout_marginStart="24dp"
+            android:gravity="center"
             android:layout_marginTop="10dp"
             android:id="@+id/colum3"
             android:layout_below="@+id/colum2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            style="?android:attr/buttonBarButtonStyle">
+          >
             <Button
+                android:id="@+id/btn5"
                 android:backgroundTint="@color/gray"
                 android:layout_width="170dp"
                 android:layout_height="50dp"
@@ -99,6 +104,7 @@
                 style="?android:attr/buttonBarButtonStyle">
             </Button>
             <Button
+                android:id="@+id/btn6"
                 android:layout_marginStart="24dp"
                 android:backgroundTint="@color/gray"
                 android:text="@string/Action"
@@ -110,7 +116,7 @@
         </Button>
     </LinearLayout>
     <LinearLayout
-        android:layout_marginStart="24dp"
+        android:gravity="center"
         android:layout_marginTop="10dp"
         android:id="@+id/colum4"
         android:layout_below="@+id/colum3"
@@ -118,6 +124,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
+            android:id="@+id/btn7"
             android:backgroundTint="@color/gray"
             android:layout_width="170dp"
             android:layout_height="50dp"
@@ -126,6 +133,7 @@
             style="?android:attr/buttonBarButtonStyle">
         </Button>
         <Button
+            android:id="@+id/btn8"
             android:layout_marginStart="24dp"
             android:backgroundTint="@color/gray"
             android:text="@string/SliceOfLife"
@@ -137,7 +145,7 @@
         </Button>
     </LinearLayout>
     <LinearLayout
-        android:layout_marginStart="24dp"
+        android:gravity="center"
         android:layout_marginTop="10dp"
         android:id="@+id/colum5"
         android:layout_below="@+id/colum4"
@@ -145,6 +153,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
+            android:id="@+id/btn9"
             android:backgroundTint="@color/gray"
             android:layout_width="170dp"
             android:layout_height="50dp"
@@ -153,6 +162,7 @@
             style="?android:attr/buttonBarButtonStyle">
         </Button>
         <Button
+            android:id="@+id/btn10"
             android:layout_marginStart="24dp"
             android:backgroundTint="@color/gray"
             android:text="@string/SuperHero"
@@ -163,7 +173,19 @@
             style="?android:attr/buttonBarButtonStyle">
         </Button>
     </LinearLayout>
-
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_below="@+id/colum5"
+            android:layout_marginStart="24dp"
+            android:backgroundTint="@color/gray"
+            android:text="@string/Next"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="24dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            style="?android:attr/buttonBarButtonStyle">
+        </Button>
 </RelativeLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
