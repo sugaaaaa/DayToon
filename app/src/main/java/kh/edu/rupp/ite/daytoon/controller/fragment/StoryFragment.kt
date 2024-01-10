@@ -1,5 +1,6 @@
 package kh.edu.rupp.ite.daytoon.controller.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -8,19 +9,22 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
+import kh.edu.rupp.ite.daytoon.controller.activity.StoryShowActivity
 import kh.edu.rupp.ite.daytoon.model.Anime
 import kh.edu.rupp.ite.daytoon.model.AnimeList
 import kh.edu.rupp.ite.daytoon.model.service.ApiService
 import kh.edu.rupp.ite.daytoon.databinding.FragmentStoryBinding
 import kh.edu.rupp.ite.daytoon.controller.adabter.AnimePreviewAdapter
+import kh.edu.rupp.ite.daytoon.model.StoryNovel
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class StoryFragment : Fragment() {
-    private lateinit var binding: FragmentStoryBinding
+class StoryFragment : Fragment(),AnimePreviewAdapter.OnItemClickListener {
+    private var _binding: FragmentStoryBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -28,7 +32,7 @@ class StoryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        binding = FragmentStoryBinding.inflate(inflater, container, false)
+        _binding = FragmentStoryBinding.inflate(inflater, container, false)
         return binding.root
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -72,16 +76,33 @@ class StoryFragment : Fragment() {
     }
     private fun showAnimeList(animeList: List<Anime>?) {
         if (animeList.isNullOrEmpty()) {
-            // Handle empty data case
             Toast.makeText(context, "Anime list is empty", Toast.LENGTH_SHORT).show()
         } else {
             val linearLayoutManager = GridLayoutManager(context, 2)
-            binding.productRecyclerView.layoutManager = linearLayoutManager
+            binding?.productRecyclerView?.layoutManager = linearLayoutManager
 
             val adapter = AnimePreviewAdapter()
             adapter.submitList(animeList)
-            binding.productRecyclerView.adapter = adapter
+            adapter.setOnItemClickListener(this)
+            binding?.productRecyclerView?.adapter = adapter
         }
     }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
+    override fun onItemClick(anime: Anime, position: Int) {
+        val array = arrayOf(
+            anime.getId(),
+            anime.getTitle(),
+            anime.getSynopsis(),
+            anime.getImage()
+        )
+        val intent = Intent(requireContext(), StoryShowActivity::class.java)
+        intent.putExtra("story", array)
+        startActivity(intent)
+    }
+
 }
 

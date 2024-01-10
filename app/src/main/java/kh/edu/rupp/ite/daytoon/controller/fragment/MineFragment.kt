@@ -11,9 +11,11 @@ import com.google.firebase.database.*
 import com.google.firebase.ktx.Firebase
 import kh.edu.rupp.ite.daytoon.databinding.FragmentMineeBinding
 import kh.edu.rupp.ite.daytoon.controller.activity.LoginActivity
+import kh.edu.rupp.ite.daytoon.databinding.FragmentLibraryBinding
 
 class MineFragment : Fragment() {
-    private var binding: FragmentMineeBinding? = null
+    private var _binding: FragmentMineeBinding? = null
+    private val binding get() = _binding!!
     private lateinit var databaseReference: DatabaseReference
     private lateinit var auth: FirebaseAuth
     private lateinit var firebaseAuth: FirebaseAuth
@@ -23,13 +25,13 @@ class MineFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentMineeBinding.inflate(inflater, container, false)
-        return binding?.root
+        _binding = FragmentMineeBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        binding = null
+        _binding = null
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

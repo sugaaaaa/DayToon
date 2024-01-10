@@ -27,7 +27,7 @@ class LoginActivity : AppCompatActivity() {
         database = FirebaseDatabase.getInstance().reference.child("users")
         sharedPreferences = getPreferences(Context.MODE_PRIVATE)
 
-        // Check if the user is already logged in
+        // Check if the user is already lo gged in
         if (isLoggedIn()) {
             redirectToIndexActivity()
         }

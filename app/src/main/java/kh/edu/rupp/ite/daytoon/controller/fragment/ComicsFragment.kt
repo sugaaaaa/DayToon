@@ -9,7 +9,6 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import kh.edu.rupp.ite.daytoon.controller.activity.StoryShowActivity
-import kh.edu.rupp.ite.daytoon.model.Anime
 import kh.edu.rupp.ite.daytoon.model.AnimeList
 import kh.edu.rupp.ite.daytoon.model.service.ApiService
 import kh.edu.rupp.ite.daytoon.databinding.FragmentComicsBinding
@@ -21,8 +20,9 @@ import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import kh.edu.rupp.ite.daytoon.model.Anime as Anime
 
- class ComicsFragment :  Fragment(), StoryNovelAdapter.OnItemClickListener{
+class ComicsFragment :  Fragment(), StoryNovelAdapter.OnItemClickListener,AnimePreviewAdapter.OnItemClickListener{
 
     private var _binding: FragmentComicsBinding? = null
     private val binding get() = _binding!!
@@ -82,6 +82,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
         val adapter = AnimePreviewAdapter()
         adapter.submitList(animeList)
+        adapter.setOnItemClickListener(this)
         binding.productRecyclerView.adapter = adapter
     }
 
@@ -140,10 +141,23 @@ import retrofit2.converter.gson.GsonConverterFactory
              storyNovel.getTitle(),
              storyNovel.getDescription(),
              storyNovel.getImg(),
+
          )
          val intent = Intent(requireContext(), StoryShowActivity::class.java)
          intent.putExtra("story", array)
          startActivity(intent)
 //         Toast.makeText(context, storyNovel.getTitle(), Toast.LENGTH_SHORT).show()
      }
-}
+
+     override fun onItemClick(anime: Anime, position: Int) {
+         val array = arrayOf(
+             anime.getId(),
+            anime.getTitle(),
+            anime.getSynopsis(),
+            anime.getImage()
+         )
+         val intent = Intent(requireContext(), StoryShowActivity::class.java)
+         intent.putExtra("story", array)
+         startActivity(intent)
+     }
+ }

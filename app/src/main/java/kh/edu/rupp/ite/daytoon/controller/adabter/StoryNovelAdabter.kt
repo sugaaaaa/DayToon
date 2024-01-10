@@ -37,11 +37,9 @@ class StoryNovelAdapter : ListAdapter<StoryNovel, StoryNovelAdapter.StoryNovelVi
     override fun onBindViewHolder(holder: StoryNovelViewHolder, position: Int) {
         val storyNovel = getItem(position)
         holder.bind(storyNovel)
-        // Set a click listener on the item view.
+        // Set onClick listener on the item view.
         holder.itemView.setOnClickListener {
-            // Get the position of the clicked item.
             val adapterPosition = holder.adapterPosition
-            // Perform the desired action.
             listener?.onItemClick(storyNovel, adapterPosition)
         }
     }

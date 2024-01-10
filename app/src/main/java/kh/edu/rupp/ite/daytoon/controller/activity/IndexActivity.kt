@@ -34,6 +34,7 @@ class IndexActivity : AppCompatActivity(){
             true
         }
     }
+
     private fun showFragment(fragment: Fragment) {
         //FragmentManager
         val fragmentManager = supportFragmentManager
