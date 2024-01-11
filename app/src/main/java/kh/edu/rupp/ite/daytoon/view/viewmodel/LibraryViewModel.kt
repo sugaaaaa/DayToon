@@ -18,7 +18,6 @@ class LibraryViewModel : ViewModel() {
         _table1Visibility.value = true
         _goodbyeVisibility.value = false
     }
-
     fun onNovelsClick() {
         _table1Visibility.value = false
         _goodbyeVisibility.value = true

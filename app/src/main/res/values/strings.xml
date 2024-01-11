@@ -12,22 +12,6 @@
     <string name="SliceOfLife">Slice Of Life</string>
     <string name="Comedy">Comedy</string>
     <string name="SuperHero">SuperHero</string>
-    <string name="UserAgreement">User Agreement Privacy Agreement</string>
-    <string name="singUp_orLogin">Sing up or Log in</string>
-    <string name="ToenjoyFreeComics">to enjoy Free Comics</string>
-    <string name="welcome">Welcome To</string>
-    <string name="Next">Next</string>
-    <string name="Sing_up">Sing up or Login</string>
-    <string name="enjoy">to enjoy free comics </string>
-    <string name="Password">Password</string>
-    <string name="Email">Email</string>
-    <string name="Login">Login</string>
-    <string name="Logout">Logout</string>
-    <string name="SignUp">Sign Up</string>
-    <string name="Orloginwith"> or login with</string>
-    <string name="HaveProblem">Have problem with logging in?</string>
-    <string name="createacc">Create Account</string>
-    <string name="Name">Name</string>
     <string name="ToWelcome">Welcome to DayToon</string>
     <string name="Find">Find your fav Manga</string>
     <string name="welcometext">Welcome</string>
@@ -44,9 +28,34 @@
     <string name="birthday">Birthday</string>
     <string name="address">Address</string>
     <string name="products">Show more</string>
-    <string name="welcomeText">
-"Welcome to our Manga and Anime hub! Explore captivating stories, vibrant characters, and thrilling adventures"</string>
-    <string name="welcomeText2">Enjoy the experience as the pages of manga and frames of anime unfold endless possibilities</string>
     <string name="title_activity_story_show">StoryShowActivity</string>
 
+<!--LoginSingUp-->
+    <string name="UserAgreement">User Agreement Privacy Agreement</string>
+    <string name="singUp_orLogin">Sing up or Log in</string>
+    <string name="ToenjoyFreeComics">to enjoy Free Comics</string>
+    <string name="welcome">Welcome To</string>
+    <string name="Next">Next</string>
+    <string name="Sing_up">Sing up or Login</string>
+    <string name="enjoy">to enjoy free comics </string>
+    <string name="Password">Password</string>
+    <string name="Email">Email</string>
+    <string name="Login">Login</string>
+    <string name="Logout">Logout</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="Orloginwith"> or login with</string>
+    <string name="HaveProblem">Have problem with logging in?</string>
+    <string name="createacc">Create Account</string>
+    <string name="Name">Name</string>
+
+<!--WelcomePage-->
+    <string name="welcomeText">"Welcome to our Manga and Anime hub! Explore captivating stories, vibrant characters, and thrilling adventures"</string>
+    <string name="welcomeText2">Enjoy the experience as the pages of manga and frames of anime unfold endless possibilities</string>
+
+<!--Library-->
+    <string name="SecreteLove">The crossovers between a boy and a girl attracted to each other in short moments. Fell in love slowly....</string>
+    <string name="TheLadyButler">Woori is heartbroken when she finds out that her favorite character Lancelot dies tragically in the novel "The Flower Raised her Sword.</string>
+    <string name="TheTyrantOnlyPerfumer">A young woman sick with an incurable illness closes her eyes for the last time, only to wake up as Ariel Winston, an antagonist of the novel she had loved reading before her death.</string>
+    <string name="theMaleLead">Baroness Eleanor Mariche, renowned novelist and relationship expert, has been summoned by an ambitious duke to convince his son, Count Ryan Calabria, into marrying the princess.</string>
+    <string name="FlirtingwithDad">I just need to prevent the villain from being born... time to break out some seduction schemes and flirt like my life depends on it!</string>
 </resources>
