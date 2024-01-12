@@ -13,5 +13,12 @@ class ChapterActivity : AppCompatActivity () {
         super.onCreate(savedInstanceState)
         binding = ActivityChapterBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+        binding.btnBack.setOnClickListener {
+//            val intent = Intent(this@StoryShowActivity, IndexActivity::class.java)
+//            startActivity(intent)
+            finish()
+        }
     }
 }
