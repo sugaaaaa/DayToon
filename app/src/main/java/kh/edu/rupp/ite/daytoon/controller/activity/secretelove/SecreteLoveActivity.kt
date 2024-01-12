@@ -3,6 +3,7 @@ package kh.edu.rupp.ite.daytoon.controller.activity.secretelove
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import kh.edu.rupp.ite.daytoon.controller.fragment.LibraryFragment
 import kh.edu.rupp.ite.daytoon.databinding.ActivitySecreteloveBinding
 
 class SecreteLoveActivity : AppCompatActivity() {
@@ -25,7 +26,8 @@ class SecreteLoveActivity : AppCompatActivity() {
         }
 
         binding.btnBack.setOnClickListener {
-            finish()
+            var intent =  Intent(this@SecreteLoveActivity, LibraryFragment::class.java)
+            startActivity(intent)
         }
     }
 }
