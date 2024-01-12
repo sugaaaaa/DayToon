@@ -44,6 +44,7 @@ class ComicsFragment :  Fragment(), StoryNovelAdapter.OnItemClickListener,AnimeP
         binding.StoryRecyclerView.adapter = adapter
     }
 
+    //API Rapid Novel
     private fun loadAnimeFromServer() {
         val retrofit = Retrofit.Builder()
             .baseUrl("https://anime-db.p.rapidapi.com")
@@ -86,6 +87,7 @@ class ComicsFragment :  Fragment(), StoryNovelAdapter.OnItemClickListener,AnimeP
         binding.productRecyclerView.adapter = adapter
     }
 
+    //  API Ratana Story
     private fun loadStoryFromServer() {
         val retrofit = Retrofit.Builder()
             .baseUrl("https://raw.githubusercontent.com")
@@ -131,10 +133,8 @@ class ComicsFragment :  Fragment(), StoryNovelAdapter.OnItemClickListener,AnimeP
         adapter.setOnItemClickListener(this)
         binding.StoryRecyclerView.adapter = adapter
     }
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
+
+//    Item click to StoryShow
      override fun onItemClick(storyNovel: StoryNovel, position: Int) {
          val array = arrayOf(
              storyNovel.getId(),
@@ -149,6 +149,7 @@ class ComicsFragment :  Fragment(), StoryNovelAdapter.OnItemClickListener,AnimeP
 //         Toast.makeText(context, storyNovel.getTitle(), Toast.LENGTH_SHORT).show()
      }
 
+//    Item click to Novel
      override fun onItemClick(anime: Anime, position: Int) {
          val array = arrayOf(
              anime.getId(),
@@ -160,4 +161,8 @@ class ComicsFragment :  Fragment(), StoryNovelAdapter.OnItemClickListener,AnimeP
          intent.putExtra("story", array)
          startActivity(intent)
      }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
  }
