@@ -30,6 +30,16 @@
                 android:layout_weight="1">
 
             </View>
+
+            <Button
+                android:id="@+id/btnPrev"
+                android:layout_width="80dp"
+                android:layout_height="40sp"
+                android:backgroundTint="@color/Greenie"
+                android:text="Prev"
+                android:layout_marginEnd="@dimen/m10"
+                android:textColor="@color/white">
+            </Button>
             <Button
                 android:id="@+id/btnNext1"
                 android:layout_width="80dp"
@@ -41,23 +51,25 @@
             </Button>
 
         </LinearLayout>
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/img_18"
+            android:src="@drawable/img_21"
             tools:ignore="ContentDescription">
+
         </ImageView>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/img_19"
+            android:src="@drawable/img_22"
             tools:ignore="ContentDescription">
         </ImageView>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/img_20"
+            android:src="@drawable/img_23"
             tools:ignore="ContentDescription">
         </ImageView>
         <Button

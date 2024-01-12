@@ -32,7 +32,9 @@
         <activity android:name=".controller.activity.Welcome2Activity" />
         <activity android:name=".controller.activity.StoryShowActivity"/>
         <activity android:name=".controller.activity.secretelove.ChapterActivity"/>
-        <activity android:name=".controller.activity.secretelove.ComicsReadActivity"/>
+        <activity android:name=".controller.activity.secretelove.ReadActivity1"/>
+        <activity android:name=".controller.activity.secretelove.ReadActivity2"/>
+        <activity android:name=".controller.activity.secretelove.SecreteLoveActivity"/>
     </application>
 
 </manifest>
