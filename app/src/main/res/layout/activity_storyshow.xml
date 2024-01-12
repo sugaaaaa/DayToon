@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginEnd="5dp"
     android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
     android:layout_height="match_parent"
-    android:layout_marginStart="@dimen/m10"
     android:orientation="vertical">
 
     <ImageView
@@ -13,6 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/s20"
+        android:layout_marginLeft="0dp"
         android:layout_gravity="start"
         android:src="@drawable/back">
     </ImageView>
@@ -20,9 +26,11 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:layout_marginTop="20dp"
         app:cardCornerRadius="15dp">
 
         <ImageView
+
             android:id="@+id/image"
             android:layout_width="match_parent"
             android:layout_height="200dp"
@@ -33,7 +41,7 @@
     </androidx.cardview.widget.CardView>
     <TextView
         android:id="@+id/title"
-        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_width="wrap_content"
@@ -42,17 +50,152 @@
 
     <TextView
         android:id="@+id/description"
-        android:layout_marginStart="5dp"
-        android:textColor="@color/black"
-        android:textSize="14sp"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:text="Action, Love" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="@dimen/s16"
+        android:text="Action, Love"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
     <TextView
+        android:layout_marginTop="@dimen/m10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hot Comment"
         android:textStyle="bold"
         android:textSize="20sp">
     </TextView>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="170dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_color">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgProfile"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_action_profile" />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/m10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Da Lin"
+                        android:textStyle="bold"
+                        android:textSize="16dp">
+                    </TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/m10"
+                    android:text="This is an amazing animation I have ever watched, I hightly recommended it !!"
+                    android:textSize="14sp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+
+                    android:layout_marginTop="40dp"
+                    android:text="2020/20/12"
+                    android:textSize="10sp"></TextView>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="170dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_color">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@id/imgProfile"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_action_profile" />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/m10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="So Vithia"
+                        android:textStyle="bold"
+                        android:textSize="16dp">
+                    </TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/m10"
+                    android:text="Good Stroy Line and Amazing animtion"
+                    android:textSize="14sp"></TextView>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="2020/20/12"
+                    android:textSize="10sp"
+                    android:layout_gravity="bottom">
+                </TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
 </LinearLayout>
+</ScrollView>

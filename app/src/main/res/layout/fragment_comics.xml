@@ -159,7 +159,7 @@
            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
            app:spanCount="3"
            tools:itemCount="6"
-           tools:listitem="@layout/view_holder_storynovel"/>
+           tools:listitem="@layout/view_holder_storynovel" />
    </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
