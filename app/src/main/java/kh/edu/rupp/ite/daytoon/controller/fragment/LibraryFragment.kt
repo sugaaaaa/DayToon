@@ -6,8 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import kh.edu.rupp.ite.daytoon.controller.activity.ChapterActivity
-import kh.edu.rupp.ite.daytoon.controller.activity.ComicsReadActivity
+import kh.edu.rupp.ite.daytoon.controller.activity.secretelove.ChapterActivity
+import kh.edu.rupp.ite.daytoon.controller.activity.secretelove.ComicsReadActivity
 import kh.edu.rupp.ite.daytoon.databinding.FragmentLibraryBinding
 
 
@@ -41,7 +41,6 @@ class LibraryFragment : Fragment() {
 
         return binding.root
     }
-
 
     override fun onDestroyView() {
         super.onDestroyView()
