@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.daytoon.controller.activity
+package kh.edu.rupp.ite.daytoon.controller.activity.secretelove
 
 import android.os.Bundle
 import android.view.LayoutInflater

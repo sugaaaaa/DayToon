@@ -149,7 +149,6 @@
                                 android:textColor="@color/white">
                             </Button>
                             <Button
-                                android:layout_marginStart="5dp"
                                 android:id="@+id/btnSecreteLoveChapter"
                                 android:layout_width="100dp"
                                 android:layout_height="50sp"
@@ -211,7 +210,6 @@
                                     </Button>
                                     <Button
                                         android:id="@+id/btnEpTheLady"
-                                        android:layout_marginStart="5dp"
                                         android:layout_width="100dp"
                                         android:layout_height="50sp"
                                         android:backgroundTint="@color/Greenie"
@@ -275,7 +273,6 @@
                             </Button>
                             <Button
                                 android:id="@+id/btnEpTheTy"
-                                android:layout_marginStart="5dp"
                                 android:layout_width="100dp"
                                 android:layout_height="50sp"
                                 android:backgroundTint="@color/Greenie"
@@ -283,7 +280,6 @@
                                 android:textColor="@color/white">
                             </Button>
                         </LinearLayout>
-
                     </LinearLayout>
                 </LinearLayout>
 

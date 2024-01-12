@@ -31,8 +31,8 @@
         <activity android:name=".controller.activity.WelcomePageActivity" />
         <activity android:name=".controller.activity.Welcome2Activity" />
         <activity android:name=".controller.activity.StoryShowActivity"/>
-        <activity android:name=".controller.activity.ChapterActivity"/>
-
+        <activity android:name=".controller.activity.secretelove.ChapterActivity"/>
+        <activity android:name=".controller.activity.secretelove.ComicsReadActivity"/>
     </application>
 
 </manifest>
