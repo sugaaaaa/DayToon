@@ -12,7 +12,7 @@
 
     <fragment
         android:id="@+id/mineFragment"
-        android:name="kh.edu.rupp.ite.daytoon.fragment.MineFragment"
+        android:name="kh.edu.rupp.ite.daytoon."
         android:label="MineFragment"
         tools:layout="@layout/fragment_minee" />
 </navigation>
