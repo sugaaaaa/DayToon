@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kh.edu.rupp.ite.daytoon.controller.activity.secretelove.ChapterActivity
-import kh.edu.rupp.ite.daytoon.controller.activity.secretelove.ComicsReadActivity
+import kh.edu.rupp.ite.daytoon.controller.activity.secretelove.ReadActivity1
 import kh.edu.rupp.ite.daytoon.databinding.FragmentLibraryBinding
 
 
@@ -25,12 +25,12 @@ class LibraryFragment : Fragment() {
 
         // Set click listeners
         binding.btnSecreteLove.setOnClickListener {
-            val intent = Intent(requireContext(), ComicsReadActivity::class.java)
+            val intent = Intent(requireContext(), ReadActivity1::class.java)
             startActivity(intent)
         }
 
         binding.btntheMaleLead.setOnClickListener {
-            val intent = Intent(requireContext(), ComicsReadActivity::class.java)
+            val intent = Intent(requireContext(), ReadActivity1::class.java)
             startActivity(intent)
         }
 

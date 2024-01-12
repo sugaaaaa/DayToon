@@ -3,7 +3,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kh.edu.rupp.ite.daytoon.databinding.ActivityReadcomicsBinding
 
-class ComicsReadActivity : AppCompatActivity() {
+class ReadActivity1 : AppCompatActivity() {
 
     private lateinit var binding : ActivityReadcomicsBinding
 

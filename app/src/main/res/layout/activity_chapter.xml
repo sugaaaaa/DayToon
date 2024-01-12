@@ -31,42 +31,45 @@
             android:text="Chapter"
             android:textColor="@color/white"
             android:textSize="@dimen/m30"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold">
+
+        </TextView>
     </com.google.android.material.appbar.MaterialToolbar>
 
     <LinearLayout
-        android:layout_margin="5dp"
-        android:padding="10dp"
+
         android:id="@+id/chapter1Layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/chapter_border"
         android:orientation="horizontal"
-        android:background="@drawable/chapter_border">
+        android:padding="10dp">
 
         <!-- Image -->
         <ImageView
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@drawable/img_12"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_12" />
 
         <!-- Text Information -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Chapter 1"
+                android:textColor="@android:color/black"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:textColor="@android:color/black" />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -87,9 +90,10 @@
 
             android:textStyle="bold"
 
-           />
+            />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_margin="5dp"
         android:padding="10dp"

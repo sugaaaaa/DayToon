@@ -1,5 +1,6 @@
 package kh.edu.rupp.ite.daytoon.controller.activity.secretelove
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
@@ -16,10 +17,14 @@ class ChapterActivity : AppCompatActivity () {
 
 
         binding.btnBack.setOnClickListener {
-//            val intent = Intent(this@StoryShowActivity, IndexActivity::class.java)
-//            startActivity(intent)
             finish()
         }
+        binding.chapter1Layout.setOnClickListener {
+            val intent = Intent( this@ChapterActivity, ReadActivity1::class.java)
+            startActivity( intent)
+        }
+
+
     }
 
 
