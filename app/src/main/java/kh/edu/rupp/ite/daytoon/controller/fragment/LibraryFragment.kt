@@ -6,10 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import kh.edu.rupp.ite.daytoon.controller.activity.ChapterActivity
 import kh.edu.rupp.ite.daytoon.controller.activity.ComicsReadActivity
 import kh.edu.rupp.ite.daytoon.databinding.FragmentLibraryBinding
 
-@Suppress("UNREACHABLE_CODE")
+
 class LibraryFragment : Fragment() {
 
     private var _binding: FragmentLibraryBinding? = null
@@ -21,17 +22,27 @@ class LibraryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentLibraryBinding.inflate(inflater, container, false)
-        return binding.root
 
+        // Set click listeners
         binding.btnSecreteLove.setOnClickListener {
             val intent = Intent(requireContext(), ComicsReadActivity::class.java)
             startActivity(intent)
         }
+
         binding.btntheMaleLead.setOnClickListener {
             val intent = Intent(requireContext(), ComicsReadActivity::class.java)
             startActivity(intent)
         }
+
+        binding.btnSecreteLoveChapter.setOnClickListener {
+            val intent = Intent(requireContext(), ChapterActivity::class.java)
+            startActivity(intent)
+        }
+
+        return binding.root
     }
+
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
