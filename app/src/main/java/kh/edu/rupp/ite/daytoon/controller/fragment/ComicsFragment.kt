@@ -114,7 +114,7 @@ class ComicsFragment :  Fragment(), StoryNovelAdapter.OnItemClickListener,AnimeP
                         showStoryNovelUpdate(storyNovel)
 //                        Toast.makeText(context, "Anime Show", Toast.LENGTH_SHORT).show()
                     } else {
-                        Toast.makeText(context, "Anime list is null", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, "Anime list is null ", Toast.LENGTH_SHORT).show()
                     }
                 } else {
                     // Handle unsuccessful response

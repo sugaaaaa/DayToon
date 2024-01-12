@@ -11,7 +11,6 @@ import kh.edu.rupp.ite.daytoon.view.viewmodel.secretelove.ReadActivity1
 import kh.edu.rupp.ite.daytoon.view.viewmodel.secretelove.SecreteLoveActivity
 import kh.edu.rupp.ite.daytoon.databinding.FragmentLibraryBinding
 
-
 class LibraryFragment : Fragment() {
 
     private var _binding: FragmentLibraryBinding? = null
@@ -33,17 +32,19 @@ class LibraryFragment : Fragment() {
             val intent = Intent(requireContext(), ReadActivity1::class.java)
             startActivity(intent)
         }
-
         binding.btnSecreteLoveChapter.setOnClickListener {
             val intent = Intent(requireContext(), ChapterActivity::class.java)
             startActivity(intent)
         }
-       binding.screteLove.setOnClickListener {
-           val intent = Intent(requireContext(), SecreteLoveActivity::class.java)
-           startActivity(intent)
-       }
+
+        binding.screteLove.setOnClickListener {
+            val intent = Intent(requireContext(), SecreteLoveActivity::class.java)
+            startActivity(intent)
+        }
+
         return binding.root
     }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

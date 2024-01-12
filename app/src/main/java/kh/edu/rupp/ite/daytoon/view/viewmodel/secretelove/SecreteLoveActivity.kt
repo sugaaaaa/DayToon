@@ -26,7 +26,8 @@ class SecreteLoveActivity : AppCompatActivity() {
         }
 
         binding.btnBack.setOnClickListener {
-            finish()
+            var intent =  Intent(this@SecreteLoveActivity, LibraryFragment::class.java)
+            startActivity(intent)
         }
     }
 }
