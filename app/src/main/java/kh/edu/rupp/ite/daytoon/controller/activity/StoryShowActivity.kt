@@ -29,8 +29,6 @@ class StoryShowActivity : AppCompatActivity() {
             finish()
         }
         binding.btnBack.setOnClickListener {
-//            val intent = Intent(this@StoryShowActivity, IndexActivity::class.java)
-//            startActivity(intent)
             finish()
         }
     }

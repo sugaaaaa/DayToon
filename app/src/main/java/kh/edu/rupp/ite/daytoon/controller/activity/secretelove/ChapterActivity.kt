@@ -15,7 +15,6 @@ class ChapterActivity : AppCompatActivity () {
         binding = ActivityChapterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         binding.btnBack.setOnClickListener {
             finish()
         }
