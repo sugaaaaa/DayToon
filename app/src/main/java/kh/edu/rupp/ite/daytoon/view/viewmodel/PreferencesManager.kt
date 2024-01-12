@@ -5,9 +5,9 @@ import android.content.SharedPreferences
 
 class PreferencesManager(context: Context) {
 
-    private val prefs: SharedPreferences =
-        context.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+    private val prefs: SharedPreferences = context.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
     companion object {
+
         private const val WELCOME_PAGE_SHOWN_KEY = "welcome_page_shown"
         private const val WELCOME_SHOWN_KEY = "welcome_shown"
         private const val INTRO_SHOWN_KEY = "intro_shown"

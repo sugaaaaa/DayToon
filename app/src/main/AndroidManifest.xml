@@ -31,13 +31,10 @@
         <activity android:name=".controller.activity.WelcomePageActivity" />
         <activity android:name=".controller.activity.Welcome2Activity" />
         <activity android:name=".controller.activity.StoryShowActivity"/>
-        <activity android:name=".controller.activity.secretelove.ChapterActivity"/>
-        <activity android:name=".controller.activity.secretelove.ReadActivity1"/>
-<<<<<<< HEAD
-=======
-        <activity android:name=".controller.activity.secretelove.ReadActivity2"/>
-        <activity android:name=".controller.activity.secretelove.SecreteLoveActivity"/>
->>>>>>> f523354e2bffb57e925f2d5170cb7b493a1e687f
+        <activity android:name=".view.viewmodel.secretelove.ChapterActivity"/>
+        <activity android:name=".view.viewmodel.secretelove.ReadActivity1"/>
+        <activity android:name=".view.viewmodel.secretelove.ReadActivity2"/>
+        <activity android:name=".view.viewmodel.secretelove.SecreteLoveActivity"/>
     </application>
 
 </manifest>

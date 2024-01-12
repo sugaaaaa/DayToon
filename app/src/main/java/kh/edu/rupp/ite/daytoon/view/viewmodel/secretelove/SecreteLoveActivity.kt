@@ -1,8 +1,9 @@
-package kh.edu.rupp.ite.daytoon.controller.activity.secretelove
+package kh.edu.rupp.ite.daytoon.view.viewmodel.secretelove
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import kh.edu.rupp.ite.daytoon.controller.fragment.LibraryFragment
 import kh.edu.rupp.ite.daytoon.databinding.ActivitySecreteloveBinding
 
 class SecreteLoveActivity : AppCompatActivity() {
@@ -15,7 +16,7 @@ class SecreteLoveActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnSecreteLove.setOnClickListener {
-            var intent =  Intent(this@SecreteLoveActivity, ReadActivity1::class.java)
+            var intent =  Intent(this@SecreteLoveActivity, LibraryFragment::class.java)
             startActivity(intent)
         }
 

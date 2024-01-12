@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.daytoon.controller.activity.secretelove
+package kh.edu.rupp.ite.daytoon.view.viewmodel.secretelove
 
 import android.content.Intent
 import android.os.Bundle

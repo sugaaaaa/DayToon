@@ -51,7 +51,6 @@ class LoginActivity : AppCompatActivity() {
                                 // Remember the user
                                 saveLoginStatus(true)
 
-                                // Continue with starting the IndexActivity
                                 redirectToIndexActivity()
                             }
                         } else {
